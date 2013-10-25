@@ -1,5 +1,7 @@
 Hello GitHub!!
 
+要測試GitHub怎麼用可以在這個檔案測試XD
+
 BranchABCCC
 
 test
