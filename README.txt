@@ -1,6 +1,10 @@
 Hello GitHub!!
 
+<<<<<<< HEAD
 branch j9988t
+=======
+要測試GitHub怎麼用可以在這個檔案測試XD
+>>>>>>> faaa125d5e8c140da82f64b64752ead095b8df62
 
 BranchABCCC
 
