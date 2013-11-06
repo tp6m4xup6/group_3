@@ -1,23 +1,13 @@
-Hello GitHub!!
+第三組  
+組員:歐譯璟、張嘉玲、莊景富、陳昱霖
 
-branch j9988t
+目標:
+透過世界銀行所提供的open data(愛滋病感染率與青少年生育率)，找出兩資料的相關關係改變圖，整理出愛滋病是否與過早的性行為有相關。
 
-要測試GitHub怎麼用可以在這個檔案測試XD
+整理方式:
+ 青春期生育率 資料欄有: Country Name 1960~2011的，
+愛滋病感染率 資料欄有: Country Name 2011的資料 ，
+利用Country Name做結合就可以得到我們的目標。
 
-BranchABCCC
-
-test
-
-test by +0
-
-test2 by +0
-
-abcdefghijklmnopqrstuvwxyz~
-
-oeg test from oeg-test-branch
-
-test3 by +0
-
-wtf  SO MANY  %@#!@#!   BY *10
-
-
+資料來源:
+世界銀行http://www.worldbank.org.cn
