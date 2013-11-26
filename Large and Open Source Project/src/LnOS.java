@@ -7,8 +7,10 @@ public class LnOS {
 
 	public static void main(String[] args) {
 
+		//TODO command line argument for input .csv file path
+		
 		ArrayList<ArrayList<String>> CSVdata = null;
-
+		
 		try {
 			CSVdata = readCSV("C:\\Users\\OEG\\Desktop\\test.CSV");
 			printCSV(CSVdata);
