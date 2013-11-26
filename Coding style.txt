@@ -1,4 +1,9 @@
 use Java coding style
 
+in eclipse
+
+you can use Ctrl + Shift + F
+
+to learn more
 
 please refer to coding_style.pdf
