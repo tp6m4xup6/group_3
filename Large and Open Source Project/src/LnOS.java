@@ -11,12 +11,11 @@ public class LnOS {
 
 		try {
 			CSVdata = readCSV("C:\\Users\\OEG\\Desktop\\test.CSV");
-			
+			printCSV(CSVdata);
 		} catch (IOException e) {
 			System.err.println("Read .csv file error!");
 			e.printStackTrace();
 		}
-		//printCSV(CSVdata);
 	}
 
 	/**
@@ -61,20 +60,19 @@ public class LnOS {
 	} // end of readCSV()
 
 	/**
-	 * Print all data in .csv file .
+	 * Print all data in .csv file.
 	 * 
 	 * @author OEG
 	 * @param dataCSV
 	 *            - ArrayList that contain data in .csv file
-	 * @return true - print data successful <br/>
-	 *         false - print data fail
 	 */
-	public static boolean printCSV(ArrayList<ArrayList<String>> dataCSV) {
-		
-		if (dataCSV==null || dataCSV.isEmpty()) {
-			return false;
-		}
+	public static void printCSV(ArrayList<ArrayList<String>> dataCSV) {
 
+		if(checkCSV(dataCSV) == false){
+			System.out.println("CSV data not available!");
+			return;
+		}
+		
 		for (int i = 0; i < dataCSV.size(); i++) {
 			ArrayList<String> lineData = dataCSV.get(i);
 
@@ -82,8 +80,23 @@ public class LnOS {
 				System.out.println(lineData.get(j));
 			}
 		}
+	} // end of printCSV()
 
-		return true;
-	}
+	/**
+	 * Check .csv data is available or not.
+	 * 
+	 * @author OEG
+	 * @param dataCSV
+	 *            - ArrayList that contain data in .csv file
+	 * @return true - CSV data is available <br/>
+	 *         false - CSV data is not available
+	 */
+	public static boolean checkCSV(ArrayList<ArrayList<String>> dataCSV) {
+		if (dataCSV == null || dataCSV.isEmpty()) {
+			return false;
+		} else {
+			return true;
+		}
+	} // end of checkCSV()
 
 } // end of LnOS
