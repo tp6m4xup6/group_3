@@ -93,7 +93,7 @@ public class fileDownload {
 	 * fileName:the download file named
 	 */
 	
-    public static String loadUrlFile(String urlPath,String savePath,String fileName){
+    public static String loadUrlFile(String urlPath,String savePath,String fileName) throws IOException{
         String msg = "";
        
         System.out.println("stat download--->"+urlPath);
