@@ -30,9 +30,7 @@ public class fileDownloadTest {
 	@Test
 	public void testLoadUrlFile() throws IOException {
 		{
-			String download_url="http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv";
-			fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
-			
+			String download_url="http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv";	
 			int flag=1;
 			try {
 				fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");	
