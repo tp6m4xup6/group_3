@@ -2,12 +2,11 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.*;
 import java.io.IOException;
-<<<<<<< HEAD
-=======
+
 import java.util.*;
 import java.net.*;
 import java.util.regex.*;
->>>>>>> origin/昱霖-test
+
 
 public class LnOS {
 
@@ -18,14 +17,7 @@ public class LnOS {
 
 		String csvpath = "C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src\\hiv.csv";
 
-<<<<<<< HEAD
 		DataCSV csv = new DataCSV("C:\\Users\\OEG\\Desktop\\test.CSV");
-=======
-		ArrayList<ArrayList> dataAL = readCSVToArrayList(csvpath);
-		
-		int theSize = dataAL.size();
-		System.out.println("How many row in csv:"+theSize);
-		
 		
 		//open HIV opendata download page and save html to tml
 		String webUrl="http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS";
@@ -40,62 +32,6 @@ public class LnOS {
 		
 		loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
 		
-	}
-	
-	
-	
-	
-	
-	
-	
-	/*
-	 * save the CSV file in ArrayList structure 
-	 * csvpath:the site csv file in
-	 */
-	
->>>>>>> origin/昱霖-test
-
-	public static ArrayList<ArrayList> readCSVToArrayList(String csvpath) {
-
-		// save all file content
-		ArrayList<ArrayList> dataAL = new ArrayList<ArrayList>();
-
-		System.out.println(csvpath + "\n");
-
-		// read file
-		BufferedReader reader;
-		try {
-<<<<<<< HEAD
-			csv.readCSV();
-			csv.printCSV();
-=======
-			reader = new BufferedReader(new FileReader(csvpath));
-			String line = null;
-			// read data
-			while ((line = reader.readLine()) != null) {
-				// save first row
-				ArrayList<String> ticketStr = new ArrayList<String>();
-				String item[] = line.split(",");// csv fule is divided by ','
-				ticketStr.clear();				// clear
-
-				// read file(row)
-				for (int i = 0; i < item.length; i++) {
-					ticketStr.add(i, item[i]);
-				}
-
-				dataAL.add(ticketStr);
-
-			}
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
->>>>>>> origin/昱霖-test
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-		return dataAL;
 	}
 	
 	/*
