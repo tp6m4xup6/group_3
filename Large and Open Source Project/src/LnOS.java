@@ -5,60 +5,36 @@ public class LnOS {
 	public static void main(String[] args) throws IOException {
 
 		System.out.println("Hello world\n");
-<<<<<<< HEAD
 
 		System.out.println("Test open CSV\n");
 
-		String csvpath = "C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src\\hiv.csv";
+		String csvpath = "hiv.csv";
 
-		DataCSV csv = new DataCSV("C:\\Users\\OEG\\Desktop\\test.CSV");
+		DataCSV csv = new DataCSV("test.CSV");
 
-		// open HIV opendata download page and save url to html
-		String webUrl = "http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS";
-		String html = fileDownload.getWebHtml(webUrl);
-		System.out.println("download page html=" + html);
+		boolean wait_download = true;
 
-		// catch the download url (ex:http:\\xXXXX.download)
-		String download_url = fileDownload.pregUrl(html);
+		while (wait_download) {
+			try {
 
-		System.out.println("download url=" + download_url);
+				// open HIV opendata download page and save url to html
+				String webUrl = "http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS";
+				String html = FileDownload.getWebHtml(webUrl);
+				System.out.println("download page html=" + html);
 
-		fileDownload
-				.loadUrlFile(
-						download_url,
-						"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src",
-						"hiv.zip");
+				// catch the download url (ex:http:\\xXXXX.download)
+				String download_url = FileDownload.pregUrl(html);
 
-		// System.out.println("download url="+download_url);
+				System.out.println("download url=" + download_url);
 
-		// fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
+				FileDownload.loadUrlFile(download_url, "", "hiv.zip");
 
-	}
-
-=======
-		
-		boolean wait_download=true;
-		
-		while(wait_download){
-			try{
-		
-				//open HIV opendata download page and save html to tml
-				String webUrl="http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS";
-				String html=fileDownload.getWebHtml(webUrl);
-				System.out.println("download pagehtml="+html);
-		
-				//catch the download url (ex:http:\\xXXXX.download)
-				String download_url = fileDownload.pregUrl(html);
-				System.out.println("download url="+download_url);		
-				fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
-				wait_download=false;
+				wait_download = false;
+			} catch (NullPointerException e) {
+				System.out.println("\nThe connection went wrong! Try again!");
 			}
-			catch(NullPointerException e){		
-				System.out.println("\nThe connect has some Wromng! try again !");
-			}
-		}	
-		
-	}	
-	
->>>>>>> origin/昱霖-test
-}
+		}
+
+	} // end of main()
+
+} // end of class LnOS

@@ -7,8 +7,6 @@ import java.util.ArrayList;
  * Object will store one .csv data
  * 
  * @author OEG
- * @param path
- *            - Path of input .csv file
  */
 public class DataCSV {
 
@@ -18,7 +16,13 @@ public class DataCSV {
 	// ArrayList to store all data in csv file
 	public ArrayList<ArrayList<String>> data = new ArrayList<ArrayList<String>>();
 
-	// Constructor
+	/**
+	 * Constructor of DataCSV
+	 * 
+	 * @author OEG
+	 * @param path
+	 *            - Path of input .csv file
+	 */
 	public DataCSV(String path) {
 		this.filePath = path;
 	}

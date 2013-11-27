@@ -8,7 +8,7 @@ import java.net.URL;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class fileDownload {
+public class FileDownload {
 
 	/**
 	 * catch the html from webUrl webUrl:the homepage url from download page
@@ -57,9 +57,9 @@ public class fileDownload {
 	 * use RE to get the download URL from htmlText htmlText: the download
 	 * page's html
 	 */
-	public static String pregUrl(String htmlText)throws NullPointerException{
-		System.out.println("Start pregUrl------");		
-		String temp=null;
+	public static String pregUrl(String htmlText) throws NullPointerException {
+		System.out.println("Start pregUrl------");
+		String temp = null;
 
 		Pattern pattern = Pattern.compile("<a href=\"([^>]+)\">CSV");
 		String testString = htmlText;
@@ -81,12 +81,11 @@ public class fileDownload {
 	 * download file from urlPath savaParh:the download file saved site
 	 * fileName:the download file named
 	 */
-<<<<<<< HEAD
 	public static String loadUrlFile(String urlPath, String savePath,
-			String fileName) {
+			String fileName) throws IOException {
 		String msg = "";
 
-		System.out.println("stat download--->" + urlPath);
+		System.out.println("start download--->" + urlPath);
 
 		try {
 			URL zeroFile = new URL(urlPath);
@@ -100,22 +99,18 @@ public class fileDownload {
 
 			// filename
 			msg = fileName + tmpName;
-			
 			BufferedInputStream bs = new BufferedInputStream(is);
-			
+
 			// catch 1048576 bytes
 			byte[] b = new byte[1048576];
 			
-			FileOutputStream fs = new FileOutputStream(savePath + "/"
+			FileOutputStream fs = new FileOutputStream(savePath + "\\"
 					+ ((fileName.indexOf(".") == -1) ? msg : fileName));
-			
 			int len;
 			while ((len = bs.read(b, 0, b.length)) != -1) {
 				fs.write(b, 0, len);
 			}
-			
 			System.out.println("done====>");
-			
 			bs.close();
 			fs.close();
 		} catch (IOException e) {
@@ -125,37 +120,5 @@ public class fileDownload {
 		}
 		return msg;
 	}
-=======
-	
-    public static String loadUrlFile(String urlPath,String savePath,String fileName) throws IOException{
-        String msg = "";
-       
-        System.out.println("start download--->"+urlPath);
 
-        try{
-            URL zeroFile=new URL(urlPath);
-            String name=zeroFile.getFile();
-
-            InputStream is = zeroFile.openStream();
-
-            String tmpName = name.substring(name.lastIndexOf("."), name.length());//get sub filename
-            msg = fileName+tmpName;			//filename
-            BufferedInputStream bs=new BufferedInputStream(is);
-            byte[] b=new byte[1048576];		//catch 1048576  bytes
-            FileOutputStream fs=new FileOutputStream(savePath + "/" + ((fileName.indexOf(".") == -1) ? msg : fileName));
-            int len;
-            while((len=bs.read(b,0,b.length))!=-1){
-                fs.write(b,0,len);
-            }
-            System.out.println("done====>");
-            bs.close();
-            fs.close();
-        }catch(IOException e){
-            e.printStackTrace();
-            System.out.println("error when reading file");
-            msg = "error";
-        }
-        return msg;
-    }
->>>>>>> origin/昱霖-test
-}
+}	//end of class FileDownload()

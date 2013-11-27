@@ -5,7 +5,6 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 
-
 public class fileDownloadTest {
 
 	@Before
@@ -14,31 +13,32 @@ public class fileDownloadTest {
 
 	@Test
 	public void testGetWebHtml() {
-		String html=null;
-		html=fileDownload.getWebHtml("http://tw.yahoo.com/");
+		String html = null;
+		html = FileDownload.getWebHtml("http://tw.yahoo.com/");
+		assertNotNull(html);
 	}
 
 	@Test
 	public void testPregUrl() {
-		String url="<a href=\"http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv\">CSV</a>";
-		String URL="http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv";
-		String download_url = fileDownload.pregUrl(url);
-		assertEquals(URL,download_url);
+		String url = "<a href=\"http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv\">CSV</a>";
+		String URL = "http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv";
+		String download_url = FileDownload.pregUrl(url);
+		assertEquals(URL, download_url);
 	}
 
 	@Test
 	public void testLoadUrlFile() throws IOException {
 		{
-			String download_url="http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv";	
-			int flag=1;
+			String download_url = "http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv";
+			int flag = 1;
 			try {
-				fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");	
+				FileDownload.loadUrlFile(download_url, "", "hiv.zip");
 			} catch (IOException e) {
-		        fail("Read .csv file error!");
-		        e.printStackTrace();
-		        flag=0;
+				fail("Read .csv file error!");
+				e.printStackTrace();
+				flag = 0;
 			}
-			assertEquals(flag,1);
+			assertEquals(flag, 1);
 		}
 	}
 }
