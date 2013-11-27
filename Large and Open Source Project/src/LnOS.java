@@ -8,7 +8,7 @@ import java.util.regex.*;
 
 public class LnOS {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		
 		System.out.println("Hello world\n");
@@ -24,7 +24,6 @@ public class LnOS {
 		String download_url = fileDownload.pregUrl(html);
 		System.out.println("download url="+download_url);
 		
-
 		
 		fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
 		

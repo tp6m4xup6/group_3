@@ -66,7 +66,7 @@ public class fileDownload {
 	 * htmlText: the download page's html
 	 */
 	
-	public static String pregUrl(String htmlText){
+	public static String pregUrl(String htmlText)throws NullPointerException{
 		System.out.println("Start pregUrl------");		
 		String temp=null;
 		
