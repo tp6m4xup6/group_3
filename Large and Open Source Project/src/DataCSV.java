@@ -4,28 +4,35 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
+ * Object will store one .csv data
+ * 
  * @author OEG
- *
+ * @param path
+ *            - Path of input .csv file
  */
 public class DataCSV {
-	
+
+	// .csv file path
+	private String filePath;
+
+	// ArrayList to store all data in csv file
+	public ArrayList<ArrayList<String>> data = new ArrayList<ArrayList<String>>();
+
+	// Constructor
+	public DataCSV(String path) {
+		this.filePath = path;
+	}
+
 	/**
 	 * Read data from input .csv file.
 	 * 
 	 * @author OEG
-	 * @param path
-	 *            - Path of input .csv file
-	 * @return ArrayList that contain data in .csv file
 	 * @throws IOException
 	 *             - If an I/O error occurs
 	 */
-	public ArrayList<ArrayList<String>> readCSV(String path)
-			throws IOException {
+	public void readCSV() throws IOException {
 
-		// Store all data in csv file
-		ArrayList<ArrayList<String>> allData = new ArrayList<ArrayList<String>>();
-
-		BufferedReader rd = new BufferedReader(new FileReader(path));
+		BufferedReader rd = new BufferedReader(new FileReader(this.filePath));
 
 		// String to store data of single line temporarily
 		String line = null;
@@ -42,52 +49,50 @@ public class DataCSV {
 				lineData.add(i, item[i]);
 			}
 
-			allData.add(lineData);
+			this.data.add(lineData);
 		}
 
 		rd.close();
-
-		return allData;
 	} // end of readCSV()
 
 	/**
 	 * Print all data in .csv file.
 	 * 
 	 * @author OEG
-	 * @param dataCSV
-	 *            - ArrayList that contain data in .csv file
+	 * @return true - Print CSV data success <br/>
+	 *         false - Print CSV data fail
 	 */
-	public void printCSV(ArrayList<ArrayList<String>> dataCSV) {
+	public boolean printCSV() {
 
-		if(checkCSV(dataCSV) == false){
+		if (checkCSV() == false) {
 			System.out.println("CSV data not available!");
-			return;
+			return false;
 		}
-		
-		for (int i = 0; i < dataCSV.size(); i++) {
-			ArrayList<String> lineData = dataCSV.get(i);
+
+		for (int i = 0; i < this.data.size(); i++) {
+			ArrayList<String> lineData = this.data.get(i);
 
 			for (int j = 0; j < lineData.size(); j++) {
 				System.out.println(lineData.get(j));
 			}
 		}
+
+		return true;
 	} // end of printCSV()
 
 	/**
 	 * Check .csv data is available or not.
 	 * 
 	 * @author OEG
-	 * @param dataCSV
-	 *            - ArrayList that contain data in .csv file
 	 * @return true - CSV data is available <br/>
 	 *         false - CSV data is not available
 	 */
-	public boolean checkCSV(ArrayList<ArrayList<String>> dataCSV) {
-		if (dataCSV == null || dataCSV.isEmpty()) {
+	public boolean checkCSV() {
+		if (this.data == null || this.data.isEmpty()) {
 			return false;
 		} else {
 			return true;
 		}
 	} // end of checkCSV()
-	
-}	//end of class DataCSV
+
+} // end of class DataCSV

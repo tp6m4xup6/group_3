@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.ArrayList;
 
 public class LnOS {
 
@@ -7,13 +6,11 @@ public class LnOS {
 
 		// TODO command line argument for input .csv file path
 
-		DataCSV csv = new DataCSV();
-
-		ArrayList<ArrayList<String>> CSVdata = null;
+		DataCSV csv = new DataCSV("C:\\Users\\OEG\\Desktop\\test.CSV");
 
 		try {
-			CSVdata = csv.readCSV("C:\\Users\\OEG\\Desktop\\test.CSV");
-			csv.printCSV(CSVdata);
+			csv.readCSV();
+			csv.printCSV();
 		} catch (IOException e) {
 			System.err.println("Read .csv file error!");
 			e.printStackTrace();
