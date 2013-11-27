@@ -5,9 +5,17 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * testGetWebHtml: test if it can get the web path.<br>
+ * testPregUrl: test if the html label which is converted is equal to url.<br> 
+ * testLoadUrlFile: test if it can download a right CSV file.
+ *  
+ * @author j9988t
+ *
+ */
+
 public class FileDownloadTest {
 
-	//ReadMe
 	
 	@Before
 	public void setUp() throws Exception {

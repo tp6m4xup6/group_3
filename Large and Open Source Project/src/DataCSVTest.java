@@ -4,10 +4,18 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 
+/**
+ * testReadCSV: test if reading CSV file is sucessful.<br>
+ * testPrintCSV: test if the CSV file is available.<br>
+ * testCheckCSV: test if the CSV file is not empty.
+ * 
+ * @author j9988t
+ *
+ */
 
 public class DataCSVTest {
 	
-	//ReadMe
+	
 	
 	PatternReadCSV factoryCSV = new PatternReadCSV();
 	
