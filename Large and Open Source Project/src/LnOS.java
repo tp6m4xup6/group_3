@@ -4,13 +4,9 @@ public class LnOS {
 
 	public static void main(String[] args) throws IOException {
 
-		System.out.println("Hello world\n");
-
-		System.out.println("Test open CSV\n");
-
-		String csvpath = "hiv.csv";
-
-		DataCSV csv = new DataCSV("test.CSV");
+		PatternReadCSV factoryCSV = new PatternReadCSV();
+		
+		DataCSV csv = factoryCSV.getCSVData("test.csv");
 
 		boolean wait_download = true;
 
@@ -27,7 +23,7 @@ public class LnOS {
 
 				System.out.println("download url=" + download_url);
 
-				FileDownload.loadUrlFile(download_url, "", "hiv.zip");
+				FileDownload.loadUrlFile(download_url, "CSV", "hiv.zip");
 
 				wait_download = false;
 			} catch (NullPointerException e) {

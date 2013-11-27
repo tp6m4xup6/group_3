@@ -5,7 +5,7 @@ import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
 
-public class fileDownloadTest {
+public class FileDownloadTest {
 
 	@Before
 	public void setUp() throws Exception {
@@ -32,7 +32,7 @@ public class fileDownloadTest {
 			String download_url = "http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv";
 			int flag = 1;
 			try {
-				FileDownload.loadUrlFile(download_url, "", "hiv.zip");
+				FileDownload.loadUrlFile(download_url, "CSV", "hiv.zip");
 			} catch (IOException e) {
 				fail("Read .csv file error!");
 				e.printStackTrace();
@@ -41,4 +41,4 @@ public class fileDownloadTest {
 			assertEquals(flag, 1);
 		}
 	}
-}
+}	//end of class FileDownloadTest

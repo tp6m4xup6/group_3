@@ -6,8 +6,10 @@ import org.junit.Test;
 
 
 public class DataCSVTest {
-
-	DataCSV testCSV = new DataCSV("C:\\Users\\OEG\\Desktop\\test.CSV");
+	
+	PatternReadCSV factoryCSV = new PatternReadCSV();
+	
+	DataCSV testCSV = factoryCSV.getCSVData("test.csv");
 	
 	@Before
 	public void setUp() throws Exception {
@@ -26,12 +28,12 @@ public class DataCSVTest {
 
 	@Test
 	public void testPrintCSV() {
-		assertFalse(testCSV.printCSV());
+		assertFalse(!testCSV.printCSV());
 	}
 
 	@Test
 	public void testCheckCSV() {
-		assertFalse(testCSV.checkCSV());
+		assertFalse(!testCSV.checkCSV());
 	}
 
-}
+}	//end of DataCSVTest

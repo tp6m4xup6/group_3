@@ -103,7 +103,7 @@ public class FileDownload {
 
 			// catch 1048576 bytes
 			byte[] b = new byte[1048576];
-			
+
 			FileOutputStream fs = new FileOutputStream(savePath + "\\"
 					+ ((fileName.indexOf(".") == -1) ? msg : fileName));
 			int len;
@@ -119,6 +119,6 @@ public class FileDownload {
 			msg = "error";
 		}
 		return msg;
-	}
+	} // end of loadUrlFile()
 
-}	//end of class FileDownload()
+} // end of class FileDownload()
