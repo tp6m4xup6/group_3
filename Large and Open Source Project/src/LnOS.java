@@ -18,7 +18,7 @@ public class LnOS {
 		ArrayList<ArrayList> dataAL = readCSVToArrayList(csvpath);
 		
 		int theSize = dataAL.size();
-		System.out.println("csv裡面有幾比資料:"+theSize);
+		System.out.println("How man row in csv:"+theSize);
 		
 		
 		//open HIV opendata download page and save html to tml
@@ -59,22 +59,17 @@ public class LnOS {
 		BufferedReader reader;
 
 		try {
-			reader = new BufferedReader(new FileReader(csvpath));
-			// reader.readLine();// 是否讀取第一行 (加上註解代表會讀取,註解拿掉不會讀取)
-			String line = null;// 暫存用(測試是否已讀完檔)
+			reader = new BufferedReader(new FileReader(csvpath));		
+			String line = null;
 
-			// 讀取資料
+			// readfile
 			while ((line = reader.readLine()) != null) {
-
-				// 存放每一列資料內容(橫的)
+				// catch file by row
 				ArrayList<String> ticketStr = new ArrayList<String>();
+				String item[] = line.split(",");	// csv is divided by ','	
+				ticketStr.clear();	// clear
 
-				String item[] = line.split(",");// csv文件為依據逗號切割
-
-				// 清除上一次存入的資料
-				ticketStr.clear();
-
-				// 讀檔(單列資料)
+				// read row
 				for (int i = 0; i < item.length; i++) {
 
 					ticketStr.add(i, item[i]);
@@ -189,10 +184,10 @@ public class LnOS {
 
             InputStream is = zeroFile.openStream();
 
-            String tmpName = name.substring(name.lastIndexOf("."), name.length());//取得副檔名
-            msg = fileName+tmpName;			//新取的檔名 + 副檔名
+            String tmpName = name.substring(name.lastIndexOf("."), name.length());
+            msg = fileName+tmpName;			//file name + subname
             BufferedInputStream bs=new BufferedInputStream(is);
-            byte[] b=new byte[1048576];		//一次取得 1048576 個 bytes
+            byte[] b=new byte[1048576];		//catch 1048576  bytes
             FileOutputStream fs=new FileOutputStream(savePath + "/" + ((fileName.indexOf(".") == -1) ? msg : fileName));
             int len;
             while((len=bs.read(b,0,b.length))!=-1){
@@ -203,7 +198,7 @@ public class LnOS {
             fs.close();
         }catch(IOException e){
             e.printStackTrace();
-            System.out.println("讀取檔案寫入時發生錯誤");
+            System.out.println("error when loading file");
             msg = "error";
         }
         return msg;
