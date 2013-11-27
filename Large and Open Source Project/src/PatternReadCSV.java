@@ -3,7 +3,6 @@ import java.io.IOException;
 /**
  * A factory that will generate DataCSV
  * @author OEG
- * 
  */
 
 public class PatternReadCSV {
@@ -21,7 +20,6 @@ public class PatternReadCSV {
 
 		try {
 			temp.readCSV();
-			temp.checkCSV();
 		} catch (IOException e) {
 			System.err.println("Read .csv file error!");
 			e.printStackTrace();
