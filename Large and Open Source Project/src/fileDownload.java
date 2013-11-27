@@ -96,7 +96,7 @@ public class fileDownload {
     public static String loadUrlFile(String urlPath,String savePath,String fileName) throws IOException{
         String msg = "";
        
-        System.out.println("stat download--->"+urlPath);
+        System.out.println("start download--->"+urlPath);
 
         try{
             URL zeroFile=new URL(urlPath);

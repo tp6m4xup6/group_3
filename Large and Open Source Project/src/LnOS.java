@@ -12,20 +12,23 @@ public class LnOS {
 		
 		
 		System.out.println("Hello world\n");
-		System.out.println("Test open CSV\n");
-	
 		
-		//open HIV opendata download page and save html to tml
-		String webUrl="http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS";
-		String html=fileDownload.getWebHtml(webUrl);
-		System.out.println("download pagehtml="+html);
+		try{
 		
-		//catch the download url (ex:http:\\xXXXX.download)
-		String download_url = fileDownload.pregUrl(html);
-		System.out.println("download url="+download_url);
+			//open HIV opendata download page and save html to tml
+			String webUrl="http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS";
+			String html=fileDownload.getWebHtml(webUrl);
+			System.out.println("download pagehtml="+html);
 		
+			//catch the download url (ex:http:\\xXXXX.download)
+			String download_url = fileDownload.pregUrl(html);
+			System.out.println("download url="+download_url);		
+			fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
 		
-		fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
+		}
+		catch(NullPointerException e){		
+			System.out.println("\nThe connect has some WromngPlease try again !");
+		}
 		
 	}	
 	
