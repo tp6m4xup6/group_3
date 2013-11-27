@@ -81,6 +81,7 @@ public class fileDownload {
 	 * download file from urlPath savaParh:the download file saved site
 	 * fileName:the download file named
 	 */
+<<<<<<< HEAD
 	public static String loadUrlFile(String urlPath, String savePath,
 			String fileName) {
 		String msg = "";
@@ -124,4 +125,37 @@ public class fileDownload {
 		}
 		return msg;
 	}
+=======
+	
+    public static String loadUrlFile(String urlPath,String savePath,String fileName) throws IOException{
+        String msg = "";
+       
+        System.out.println("start download--->"+urlPath);
+
+        try{
+            URL zeroFile=new URL(urlPath);
+            String name=zeroFile.getFile();
+
+            InputStream is = zeroFile.openStream();
+
+            String tmpName = name.substring(name.lastIndexOf("."), name.length());//get sub filename
+            msg = fileName+tmpName;			//filename
+            BufferedInputStream bs=new BufferedInputStream(is);
+            byte[] b=new byte[1048576];		//catch 1048576  bytes
+            FileOutputStream fs=new FileOutputStream(savePath + "/" + ((fileName.indexOf(".") == -1) ? msg : fileName));
+            int len;
+            while((len=bs.read(b,0,b.length))!=-1){
+                fs.write(b,0,len);
+            }
+            System.out.println("done====>");
+            bs.close();
+            fs.close();
+        }catch(IOException e){
+            e.printStackTrace();
+            System.out.println("error when reading file");
+            msg = "error";
+        }
+        return msg;
+    }
+>>>>>>> origin/昱霖-test
 }
