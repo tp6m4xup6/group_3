@@ -1,8 +1,15 @@
 
 public class LnOS {
 
+<<<<<<< HEAD
 	public static void main(String[] args) {
 
+=======
+	public static void main(String[] args) throws IOException {
+		
+		
+		System.out.println("Hello world\n");
+>>>>>>> origin/昱霖-test
 		System.out.println("Test open CSV\n");
 
 		String csvpath = "C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src\\hiv.csv";
@@ -16,6 +23,7 @@ public class LnOS {
 
 		// catch the download url (ex:http:\\xXXXX.download)
 		String download_url = fileDownload.pregUrl(html);
+<<<<<<< HEAD
 		System.out.println("download url=" + download_url);
 
 		fileDownload
@@ -26,4 +34,13 @@ public class LnOS {
 
 	}
 
+=======
+		System.out.println("download url="+download_url);
+		
+		
+		fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
+		
+	}	
+	
+>>>>>>> origin/昱霖-test
 }
