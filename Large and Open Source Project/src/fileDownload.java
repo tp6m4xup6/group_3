@@ -1,45 +1,17 @@
+import java.io.BufferedInputStream;
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.*;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import java.util.*;
-import java.net.*;
-import java.util.regex.*;
 
-
-public class LnOS {
-
-	public static void main(String[] args) {
-		
-		
-		System.out.println("Hello world\n");
-		System.out.println("Test open CSV\n");
-<<<<<<< HEAD
-
-		String csvpath = "C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src\\hiv.csv";
-
-		DataCSV csv = new DataCSV("C:\\Users\\OEG\\Desktop\\test.CSV");
-=======
-	
->>>>>>> origin/昱霖-test
-		
-		//open HIV opendata download page and save html to tml
-		String webUrl="http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS";
-		String html=fileDownload.getWebHtml(webUrl);
-		System.out.println("download pagehtml="+html);
-		
-		//catch the download url (ex:http:\\xXXXX.download)
-		String download_url = fileDownload.pregUrl(html);
-		System.out.println("download url="+download_url);
-		
-
-		
-<<<<<<< HEAD
-		loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
-		
-	}
-	
+public class fileDownload {
 	/*
 	 * catch the html from webUrl
 	 * webUrl:the homepage url from download page 
@@ -151,10 +123,4 @@ public class LnOS {
         }
         return msg;
     }
-=======
-		fileDownload.loadUrlFile(download_url,"C:\\Users\\user\\Documents\\GitHub\\group_3\\Large and Open Source Project\\src","hiv.zip");
->>>>>>> origin/昱霖-test
-		
-	}	
-	
 }
