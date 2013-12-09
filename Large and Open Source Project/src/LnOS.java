@@ -6,6 +6,7 @@ public class LnOS {
 
 		PatternReadCSV factoryCSV = new PatternReadCSV();
 		
+		@SuppressWarnings("unused")
 		DataCSV csv = factoryCSV.getCSVData("test.csv");
 
 		boolean wait_download = true;

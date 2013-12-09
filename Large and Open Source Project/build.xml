@@ -1,42 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="LnOS" basedir="." default="main">
-	<!--Set parameter-->
-	<property name="src.dir"		value="src"/>
-	<property name="bulid.dir"		value="build"/>
-	<property name="classes.dir"	value="build/classes"/>
-	<property name="jar.dir"		value="build/jar"/>
-	<property name="main-class"		value="LnOS"/>
-	
-	<!--Clean previous build dir-->
+	<!--Set parameter -->
+	<property name="src.dir" value="src" />
+	<property name="bulid.dir" value="build" />
+	<property name="classes.dir" value="build/classes" />
+	<property name="jar.dir" value="build/jar" />
+	<property name="main-class" value="LnOS" />
+
+	<!--Clean previous build dir -->
 	<target name="clean">
-		<delete dir="build"/>
+		<delete dir="build" />
 	</target>
-	
-	<!--Compile-->
+
+	<!--Compile -->
 	<target name="compile">
-		<mkdir dir="${classes.dir}"/>
-		<javac srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="ture"/>
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}"
+			includeAntRuntime="ture"/>
 	</target>
-		
-	<!--Generate jar file-->
+
+	<!--Generate jar file -->
 	<target name="jar" depends="compile">
-		<mkdir dir="${jar.dir}"/>
+		<mkdir dir="${jar.dir}" />
 		<jar destfile="${jar.dir}/${ant.project.name}.jar" basedir="${classes.dir}">
 			<manifest>
-				<attribute name="Main-Class" value="${main-class}"/>
+				<attribute name="Main-Class" value="${main-class}" />
 			</manifest>
 		</jar>
 	</target>
-		
-	<!--Run-->
-	<target name="run" depends="jar">
-		<java jar="${jar.dir}/${ant.project.name}.jar" fork="true"/>
-	</target>
-	
-	<target name="clean-bulid" depends="clean,jar"/>
-			
-	<target name="main" depends="clean,run"/>
-	
 
-		
+	<!--Run -->
+	<target name="run" depends="jar">
+		<java jar="${jar.dir}/${ant.project.name}.jar" fork="true" />
+	</target>
+
+	<target name="clean-bulid" depends="clean,jar" />
+
+	<target name="main" depends="clean,run" />
+
+
+
 </project>
