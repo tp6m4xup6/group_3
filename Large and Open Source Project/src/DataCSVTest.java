@@ -5,7 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * testReadCSV: test if reading CSV file is sucessful.<br>
+ * testReadCSV: test if reading CSV file is successful.<br>
  * testPrintCSV: test if the CSV file is available.<br>
  * testCheckCSV: test if the CSV file is not empty.
  * 
