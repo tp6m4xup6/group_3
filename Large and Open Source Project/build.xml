@@ -33,7 +33,6 @@
 	<target name="run" depends="jar">
 		<java jar="${jar.dir}/${ant.project.name}.jar" fork="true" />
 	</target>
-<<<<<<< HEAD
 	
 	<target name="clean-bulid" depends="clean,jar"/>
 			
@@ -68,13 +67,9 @@
 			<report format="frames" todir="${reports}\html"/>
 		</junitreport>
 	</target>
-=======
 
 	<target name="clean-bulid" depends="clean,jar" />
 
 	<target name="main" depends="clean,run" />
 
-
-
->>>>>>> b6083e0e4c2ab654d6f6b5efc08ff95ecc43a43e
 </project>
