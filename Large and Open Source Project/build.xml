@@ -37,6 +37,33 @@
 			
 	<target name="main" depends="clean,run"/>
 	
-
-		
+	<!--JUnit testing-->
+	<target name="run-tests" depends="compile">
+		<junit printsummary="yes" haltonfailure="no" showoutput="no">
+			<classpath>
+				<pathelement path="${build}"/>
+				<fileset dir="lib"><!--change this-->
+					<include name="**/*.jar"/>
+				</fileset>
+			</classpath>
+			
+			<batchtest fork="yes" todir="${reports}/raw/">
+				<formatter type="xml"/>
+				<fileset dir="${src}">
+					<include name="**/*Test.java"/>
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+	
+	<!--Test report-->
+	<target name="test" depends="run-tests">
+		<junitreport todir="${reports}">
+			<fileset dir="${reports}/raw/">
+				<include name="Test-*.xml"/>
+			</fileset>
+			<!--strange@@-->
+			<report format="frames" todir="${reports}\html"/>
+		</junitreport>
+	</target>
 </project>
