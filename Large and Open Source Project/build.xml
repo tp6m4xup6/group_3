@@ -16,7 +16,11 @@
 	<target name="compile">
 		<mkdir dir="${classes.dir}" />
 		<javac srcdir="${src.dir}" destdir="${classes.dir}"
-			includeAntRuntime="ture"/>
+			includeAntRuntime="ture">
+			<classpath>
+					<path id="org.junit" location="C:/apache-ant-1.9.2/lib/junit.jar"/> 
+			</classpath>
+		</javac>
 	</target>
 
 	<!--Generate jar file -->
@@ -41,11 +45,12 @@
 	<!--JUnit testing-->
 	<target name="run-tests" depends="compile">
 		<junit printsummary="yes" haltonfailure="no" showoutput="no">
-			<classpath>
-				<path id="org.junit" location="C:/apache-ant-1.9.2/lib/junit.jar"/> 
-			</classpath>
+			<pathelement path="${build.dir}"/>
+			<fileset dir="lib"><!--change this-->
+				<include name="**/*.jar"/>
+			</fileset>
 			
-			<batchtest fork="yes" todir="${reports}/raw/">
+			<batchtest fork="yes" todir="${reports.dir}/raw/">
 				<formatter type="xml"/>
 				<fileset dir="${src}">
 					<include name="**/*Test.java"/>
