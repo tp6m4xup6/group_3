@@ -38,7 +38,8 @@ public class DataCSVTest {
 
 	@Test
 	public void testPrintCSV() {
-		assertFalse(!testCSV.printCSV());
+		//only need to call checkCSV()
+		assertFalse(!testCSV.checkCSV());
 	}
 
 	@Test
