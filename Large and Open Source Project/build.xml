@@ -42,10 +42,7 @@
 	<target name="run-tests" depends="compile">
 		<junit printsummary="yes" haltonfailure="no" showoutput="no">
 			<classpath>
-				<pathelement path="${build}"/>
-				<fileset dir="lib"><!--change this-->
-					<include name="**/*.jar"/>
-				</fileset>
+				<path id="org.junit" location="C:/apache-ant-1.9.2/lib/junit.jar"/> 
 			</classpath>
 			
 			<batchtest fork="yes" todir="${reports}/raw/">
@@ -68,8 +65,5 @@
 		</junitreport>
 	</target>
 
-	<target name="clean-bulid" depends="clean,jar" />
-
-	<target name="main" depends="clean,run" />
 
 </project>
