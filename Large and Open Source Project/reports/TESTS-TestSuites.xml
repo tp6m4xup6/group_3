@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-<<<<<<< HEAD
-  <testsuite errors="1" failures="0" hostname="OEG-PC" id="0" name="DataCSVTest" package="" skipped="0" tests="1" time="0.0" timestamp="2013-12-10T16:04:43">
-=======
-  <testsuite errors="0" failures="0" hostname="OEG-PC" id="0" name="DataCSVTest" package="" skipped="0" tests="3" time="0.232" timestamp="2013-12-10T16:31:50">
->>>>>>> origin/j9988t
+  <testsuite errors="0" failures="0" hostname="OEG-PC" id="0" name="DataCSVTest" package="" skipped="0" tests="3" time="0.237" timestamp="2013-12-10T16:48:25">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -106,15 +102,9 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-<<<<<<< HEAD
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DataCSVTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-DataCSVTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher8101177597937957606.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit3719885215465809413.properties" />
-
-          <property name="java.class.path" value="D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
-=======
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DataCSVTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-DataCSVTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher8351636576997852586.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit8780916317188697426.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DataCSVTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-DataCSVTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher8252753644821010462.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit3928899376634498376.properties" />
 
           <property name="java.class.path" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build\classes;D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\org.hamcrest.core_1.1.0.v20090501071000.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
->>>>>>> origin/j9988t
 
           <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
 
@@ -160,36 +150,18 @@
 
       </properties>
 
-<<<<<<< HEAD
-      <error message="DataCSVTest" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: DataCSVTest
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:190)
-</error>
-=======
       <testcase classname="DataCSVTest" name="testCheckCSV" time="0.001" />
 
       <testcase classname="DataCSVTest" name="testPrintCSV" time="0.0" />
 
       <testcase classname="DataCSVTest" name="testReadCSV" time="0.008" />
->>>>>>> origin/j9988t
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-<<<<<<< HEAD
-  <testsuite errors="1" failures="0" hostname="OEG-PC" id="1" name="FileDownloadTest" package="" skipped="0" tests="1" time="0.0" timestamp="2013-12-10T16:04:44">
-=======
-  <testsuite errors="0" failures="0" hostname="OEG-PC" id="1" name="FileDownloadTest" package="" skipped="0" tests="3" time="2.151" timestamp="2013-12-10T16:31:51">
->>>>>>> origin/j9988t
+  <testsuite errors="0" failures="0" hostname="OEG-PC" id="1" name="FileDownloadTest" package="" skipped="0" tests="3" time="2.09" timestamp="2013-12-10T16:48:26">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -291,15 +263,9 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-<<<<<<< HEAD
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner FileDownloadTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-FileDownloadTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher6983009248948011910.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit3773723317056725049.properties" />
-
-          <property name="java.class.path" value="D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
-=======
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner FileDownloadTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-FileDownloadTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher7070085558170817366.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit6951143437527818162.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner FileDownloadTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-FileDownloadTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher454629094643437866.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit1798961630645374816.properties" />
 
           <property name="java.class.path" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build\classes;D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\org.hamcrest.core_1.1.0.v20090501071000.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
->>>>>>> origin/j9988t
 
           <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
 
@@ -345,35 +311,18 @@
 
       </properties>
 
-<<<<<<< HEAD
-      <error message="FileDownloadTest" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: FileDownloadTest
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
-	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
-	at java.security.AccessController.doPrivileged(Native Method)
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
-	at java.lang.Class.forName0(Native Method)
-	at java.lang.Class.forName(Class.java:190)
-</error>
+      <testcase classname="FileDownloadTest" name="testPregUrl" time="0.003" />
 
-      <system-out><![CDATA[]]></system-out>
+      <testcase classname="FileDownloadTest" name="testGetWebHtml" time="1.11" />
 
-      <system-err><![CDATA[]]></system-err>
-=======
-      <testcase classname="FileDownloadTest" name="testLoadUrlFile" time="0.912" />
+      <testcase classname="FileDownloadTest" name="testLoadUrlFile" time="0.909" />
 
-      <testcase classname="FileDownloadTest" name="testGetWebHtml" time="1.169" />
-
-      <testcase classname="FileDownloadTest" name="testPregUrl" time="0.001" />
-
-      <system-out><![CDATA[start download--->http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv
-error when reading file
+      <system-out><![CDATA[Start pregUrl------
+------pregUrl down
 Reading Web-
 ----Read finisded
-Start pregUrl------
-------pregUrl down
+start download--->http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv
+error when reading file
 ]]></system-out>
 
       <system-err><![CDATA[java.io.FileNotFoundException: CSV\hiv.zip (系統找不到指定的路徑。)
@@ -405,7 +354,6 @@ Start pregUrl------
 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1063)
 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:914)
 ]]></system-err>
->>>>>>> origin/j9988t
 
   </testsuite>
 </testsuites>

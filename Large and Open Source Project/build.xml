@@ -5,7 +5,7 @@
 	<property name="build.dir" value="build" />
 	<property name="classes.dir" value="${build.dir}/classes" />
 	<property name="jar.dir" value="${build.dir}/jar" />
-	<property name="reports.dir" value="reports"/>
+	<property name="reports.dir" value="reports" />
 	<property name="main-class" value="LnOS" />
 
 	<!--Clean previous build dir -->
@@ -19,8 +19,10 @@
 		<javac srcdir="${src.dir}" destdir="${classes.dir}"
 			includeAntRuntime="ture">
 			<classpath>
-				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
-			 	<path location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+				<!-- change to referenced location -->
+				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar" />
+				<path
+					location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
 			</classpath>
 		</javac>
 	</target>
@@ -39,34 +41,40 @@
 	<target name="run" depends="jar">
 		<java jar="${jar.dir}/${ant.project.name}.jar" fork="true" />
 	</target>
-	
-	<target name="clean-build" depends="clean,jar"/>
-			
-	<target name="main" depends="clean,run,test"/>
-	
-	<!--JUnit testing-->
+
+	<target name="clean-build" depends="clean,jar" />
+
+	<target name="main" depends="clean,run,test" />
+
+	<!--JUnit testing -->
 	<target name="run-tests" depends="compile">
-		<mkdir dir="${reports.dir}/raw/"/>
-        <junit printsummary="yes" haltonfailure="no" showoutput="yes">
+		<mkdir dir="${reports.dir}/raw/" />
+		<junit printsummary="yes" haltonfailure="no" showoutput="no">
 			<classpath>
-			    <pathelement path="${classes.dir}"/>
-				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
-			 	<path location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+				<pathelement path="${classes.dir}" />
+				<!-- change to referenced location -->
+				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar" />
+				<path
+					location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
 			</classpath>
-        	
-        	
-        	
-        </junit>
+
+			<batchtest fork="yes" todir="${reports.dir}/raw/">
+				<formatter type="xml" />
+				<fileset dir="${src.dir}" includes="**/*Test*.java" />
+			</batchtest>
+
+
+		</junit>
 	</target>
-	
-	<!--Test report-->
+
+	<!--Test report -->
 	<target name="test" depends="run-tests">
 		<junitreport todir="${reports.dir}">
 			<fileset dir="${reports.dir}/raw/">
-				<include name="TEST-*.xml"/>
+				<include name="TEST-*.xml" />
 			</fileset>
-			<!--strange@@-->
-			<report format="frames" todir="${reports.dir}\html"/>
+			<!--strange@@ -->
+			<report format="frames" todir="${reports.dir}\html" />
 		</junitreport>
 	</target>
 
