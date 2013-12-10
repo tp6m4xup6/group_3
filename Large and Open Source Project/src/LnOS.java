@@ -8,7 +8,8 @@ public class LnOS {
 		
 		@SuppressWarnings("unused")
 		DataCSV csv = factoryCSV.getCSVData("test.csv");
-
+		System.out.println("run success");
+/*
 		boolean wait_download = true;
 
 		while (wait_download) {
@@ -31,7 +32,8 @@ public class LnOS {
 				System.out.println("\nThe connection went wrong! Try again!");
 			}
 		}
-
+*/
+		
 	} // end of main()
 
 } // end of class LnOS
