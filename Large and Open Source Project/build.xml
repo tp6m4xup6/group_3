@@ -2,15 +2,15 @@
 <project name="LnOS" basedir="." default="main">
 	<!--Set parameter -->
 	<property name="src.dir" value="src" />
-	<property name="bulid.dir" value="build" />
-	<property name="classes.dir" value="build/classes" />
-	<property name="jar.dir" value="build/jar" />
+	<property name="build.dir" value="build" />
+	<property name="classes.dir" value="${build.dir}/classes" />
+	<property name="jar.dir" value="${build.dir}/jar" />
 	<property name="reports.dir" value="reports"/>
 	<property name="main-class" value="LnOS" />
 
 	<!--Clean previous build dir -->
 	<target name="clean">
-		<delete dir="build" />
+		<delete dir="${build.dir}" />
 	</target>
 
 	<!--Compile -->
@@ -46,16 +46,14 @@
 	<!--JUnit testing-->
 	<target name="run-tests" depends="compile">
 		<mkdir dir="${reports.dir}/raw/"/>
-        <junit printsummary="yes" haltonfailure="no" showoutput="no">
+        <junit printsummary="yes" haltonfailure="no" showoutput="yes">
 			<classpath>
 			    <pathelement path="${build.dir}"/>
 				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
 			</classpath>
         	
-        	<batchtest fork="yes" todir="${reports.dir}/raw/">
-        		<formatter type="xml"/>
-        		<fileset dir="${src.dir}" includes="**/*Test*.java"/>
-        	</batchtest>
+        	
+        	
         </junit>
 	</target>
 	
