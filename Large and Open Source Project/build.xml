@@ -3,14 +3,14 @@
 	<!--Set parameter -->
 	<property name="src.dir" value="src" />
 	<property name="build.dir" value="build" />
-	<property name="classes.dir" value="build/classes" />
-	<property name="jar.dir" value="build/jar" />
+	<property name="classes.dir" value="${build.dir}/classes" />
+	<property name="jar.dir" value="${build.dir}/jar" />
 	<property name="reports.dir" value="reports"/>
 	<property name="main-class" value="LnOS" />
 
 	<!--Clean previous build dir -->
 	<target name="clean">
-		<delete dir="build" />
+		<delete dir="${build.dir}" />
 	</target>
 
 	<!--Compile -->
@@ -19,8 +19,8 @@
 		<javac srcdir="${src.dir}" destdir="${classes.dir}"
 			includeAntRuntime="ture">
 			<classpath>
-					<path id="org.junit" location="C:/apache-ant-1.9.2/lib/junit.jar"/> 
-					<path location="C:/apache-ant-1.9.2/lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
+			 	<path location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
 			</classpath>
 		</javac>
 	</target>
@@ -50,8 +50,8 @@
         <junit printsummary="yes" haltonfailure="no" showoutput="no">
 			<classpath>
 			    <pathelement path="${classes.dir}"/>
-				<path id="org.junit" location="C:/apache-ant-1.9.2/lib/junit.jar"/> 
-			 	<path location="C:/apache-ant-1.9.2/lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
+				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
+			 	<path location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
 			</classpath>
         	
         	<batchtest fork="yes" todir="${reports.dir}/raw/">
