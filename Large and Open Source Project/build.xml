@@ -2,7 +2,7 @@
 <project name="LnOS" basedir="." default="main">
 	<!--Set parameter -->
 	<property name="src.dir" value="src" />
-	<property name="bulid.dir" value="build" />
+	<property name="build.dir" value="build" />
 	<property name="classes.dir" value="build/classes" />
 	<property name="jar.dir" value="build/jar" />
 	<property name="reports.dir" value="reports"/>
@@ -19,7 +19,8 @@
 		<javac srcdir="${src.dir}" destdir="${classes.dir}"
 			includeAntRuntime="ture">
 			<classpath>
-					<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
+					<path id="org.junit" location="C:/apache-ant-1.9.2/lib/junit.jar"/> 
+					<path location="C:/apache-ant-1.9.2/lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
 			</classpath>
 		</javac>
 	</target>
@@ -39,7 +40,7 @@
 		<java jar="${jar.dir}/${ant.project.name}.jar" fork="true" />
 	</target>
 	
-	<target name="clean-bulid" depends="clean,jar"/>
+	<target name="clean-build" depends="clean,jar"/>
 			
 	<target name="main" depends="clean,run,test"/>
 	
@@ -48,8 +49,9 @@
 		<mkdir dir="${reports.dir}/raw/"/>
         <junit printsummary="yes" haltonfailure="no" showoutput="no">
 			<classpath>
-			    <pathelement path="${build.dir}"/>
-				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
+			    <pathelement path="${classes.dir}"/>
+				<path id="org.junit" location="C:/apache-ant-1.9.2/lib/junit.jar"/> 
+			 	<path location="C:/apache-ant-1.9.2/lib/org.hamcrest.core_1.3.0.v201303031735.jar"/>
 			</classpath>
         	
         	<batchtest fork="yes" todir="${reports.dir}/raw/">
