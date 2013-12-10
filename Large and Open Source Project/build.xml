@@ -19,7 +19,8 @@
 		<javac srcdir="${src.dir}" destdir="${classes.dir}"
 			includeAntRuntime="ture">
 			<classpath>
-					<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
+				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
+			 	<path location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
 			</classpath>
 		</javac>
 	</target>
@@ -39,7 +40,7 @@
 		<java jar="${jar.dir}/${ant.project.name}.jar" fork="true" />
 	</target>
 	
-	<target name="clean-bulid" depends="clean,jar"/>
+	<target name="clean-build" depends="clean,jar"/>
 			
 	<target name="main" depends="clean,run,test"/>
 	
@@ -48,8 +49,9 @@
 		<mkdir dir="${reports.dir}/raw/"/>
         <junit printsummary="yes" haltonfailure="no" showoutput="yes">
 			<classpath>
-			    <pathelement path="${build.dir}"/>
+			    <pathelement path="${classes.dir}"/>
 				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
+			 	<path location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
 			</classpath>
         	
         	

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<<<<<<< HEAD
 <testsuite errors="1" failures="0" hostname="OEG-PC" name="DataCSVTest" skipped="0" tests="1" time="0.0" timestamp="2013-12-10T16:04:43">
+=======
+<testsuite errors="0" failures="0" hostname="OEG-PC" name="DataCSVTest" skipped="0" tests="3" time="0.232" timestamp="2013-12-10T16:31:50">
+>>>>>>> origin/j9988t
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -12,7 +16,7 @@
     <property name="jar.dir" value="build/jar" />
     <property name="java.runtime.version" value="1.7.0_45-b18" />
     <property name="user.name" value="OEG" />
-    <property name="bulid.dir" value="build" />
+    <property name="build.dir" value="build" />
     <property name="user.language" value="zh" />
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin" />
     <property name="reports.dir" value="reports" />
@@ -51,8 +55,13 @@
     <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="java.vm.vendor" value="Oracle Corporation" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+<<<<<<< HEAD
     <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DataCSVTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-DataCSVTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher8101177597937957606.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit3719885215465809413.properties" />
     <property name="java.class.path" value="D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
+=======
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DataCSVTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-DataCSVTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher8351636576997852586.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit8780916317188697426.properties" />
+    <property name="java.class.path" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build\classes;D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\org.hamcrest.core_1.1.0.v20090501071000.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
+>>>>>>> origin/j9988t
     <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="ant.file.type" value="file" />
@@ -75,6 +84,7 @@
     <property name="src.dir" value="src" />
     <property name="ant.project.invoked-targets" value="main" />
   </properties>
+<<<<<<< HEAD
   <error message="DataCSVTest" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: DataCSVTest
 	at java.net.URLClassLoader$1.run(URLClassLoader.java:366)
 	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
@@ -86,6 +96,11 @@
 	at java.lang.Class.forName0(Native Method)
 	at java.lang.Class.forName(Class.java:190)
 </error>
+=======
+  <testcase classname="DataCSVTest" name="testCheckCSV" time="0.001" />
+  <testcase classname="DataCSVTest" name="testPrintCSV" time="0.0" />
+  <testcase classname="DataCSVTest" name="testReadCSV" time="0.008" />
+>>>>>>> origin/j9988t
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
