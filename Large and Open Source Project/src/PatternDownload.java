@@ -1,19 +1,28 @@
 import java.io.IOException;
 
-public class LnOS {
+/**
+ * A factory that will generate DataCSV
+ * @author OEG
+ */
 
-	public static void main(String[] args) throws IOException {
+public class PatternDownload {
 
-		PatternReadCSV factoryCSV = new PatternReadCSV();
-		
-		@SuppressWarnings("unused")
-		DataCSV csv = factoryCSV.getCSVData("test.csv");
+	/**
+	 * dO
+	 * 
+	 * @author tp6m4xup6
+	 * @param FileDownPattern
+	 *           
+	 * @return no return (download file from world bank website)
+	 * @throws IOException 
+	 */
+	public boolean getCSVData(String path) throws IOException {
 
 		boolean wait_download = true;
 
+		
 		while (wait_download) {
 			try {
-
 				// open HIV opendata download page and save url to html
 				String webUrl = "http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS";
 				String html = FileDownload.getWebHtml(webUrl);
@@ -24,14 +33,20 @@ public class LnOS {
 
 				System.out.println("download url=" + download_url);
 
-				FileDownload.loadUrlFile(download_url, "src", "hiv.zip");
+				FileDownload.loadUrlFile(download_url, "CSV", "hiv.zip");
 
 				wait_download = false;
 			} catch (NullPointerException e) {
 				System.out.println("\nThe connection went wrong! Try again!");
 			}
 		}
+		
+		if(wait_download==true){
+			return false;
+		}
+		else{ 
+			return true;
+		}
+	} // end of getCSVData()
 
-	} // end of main()
-
-} // end of class LnOS
+} // end of class PatternReadCSV
