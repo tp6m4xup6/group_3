@@ -19,7 +19,7 @@
 		<javac srcdir="${src.dir}" destdir="${classes.dir}"
 			includeAntRuntime="ture">
 			<classpath>
-					<path id="org.junit" location="C:/apache-ant-1.9.2/lib/junit.jar"/> 
+					<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
 			</classpath>
 		</javac>
 	</target>
@@ -41,13 +41,16 @@
 	
 	<target name="clean-bulid" depends="clean,jar"/>
 			
-	<target name="main" depends="clean,run,run-tests"/>
+	<target name="main" depends="clean,run,test"/>
 	
 	<!--JUnit testing-->
 	<target name="run-tests" depends="compile">
-		<mkdir dir="${reports.dir}" />
+		<mkdir dir="${reports.dir}/raw/"/>
         <junit printsummary="yes" haltonfailure="no" showoutput="no">
-
+			<classpath>
+			    <pathelement path="${build.dir}"/>
+				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar"/> 
+			</classpath>
         	
         	<batchtest fork="yes" todir="${reports.dir}/raw/">
         		<formatter type="xml"/>
