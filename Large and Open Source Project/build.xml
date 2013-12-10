@@ -5,6 +5,7 @@
 	<property name="bulid.dir" value="build" />
 	<property name="classes.dir" value="build/classes" />
 	<property name="jar.dir" value="build/jar" />
+	<property name="reports.dir" value="reports"/>
 	<property name="main-class" value="LnOS" />
 
 	<!--Clean previous build dir -->
@@ -40,33 +41,29 @@
 	
 	<target name="clean-bulid" depends="clean,jar"/>
 			
-	<target name="main" depends="clean,run"/>
+	<target name="main" depends="clean,run,run-tests"/>
 	
 	<!--JUnit testing-->
 	<target name="run-tests" depends="compile">
-		<junit printsummary="yes" haltonfailure="no" showoutput="no">
-			<pathelement path="${build.dir}"/>
-			<fileset dir="lib"><!--change this-->
-				<include name="**/*.jar"/>
-			</fileset>
-			
-			<batchtest fork="yes" todir="${reports.dir}/raw/">
-				<formatter type="xml"/>
-				<fileset dir="${src}">
-					<include name="**/*Test.java"/>
-				</fileset>
-			</batchtest>
-		</junit>
+		<mkdir dir="${reports.dir}" />
+        <junit printsummary="yes" haltonfailure="no" showoutput="no">
+
+        	
+        	<batchtest fork="yes" todir="${reports.dir}/raw/">
+        		<formatter type="xml"/>
+        		<fileset dir="${src.dir}" includes="**/*Test*.java"/>
+        	</batchtest>
+        </junit>
 	</target>
 	
 	<!--Test report-->
 	<target name="test" depends="run-tests">
-		<junitreport todir="${reports}">
-			<fileset dir="${reports}/raw/">
-				<include name="Test-*.xml"/>
+		<junitreport todir="${reports.dir}">
+			<fileset dir="${reports.dir}/raw/">
+				<include name="TEST-*.xml"/>
 			</fileset>
 			<!--strange@@-->
-			<report format="frames" todir="${reports}\html"/>
+			<report format="frames" todir="${reports.dir}\html"/>
 		</junitreport>
 	</target>
 
