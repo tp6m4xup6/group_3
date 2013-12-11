@@ -6,6 +6,8 @@
 	<property name="classes.dir" value="${build.dir}/classes" />
 	<property name="jar.dir" value="${build.dir}/jar" />
 	<property name="reports.dir" value="reports" />
+	<property name="external JARs.dir" value="external JARs" />
+	<property name="JUnit4.dir" value="${external JARs.dir}/JUnit4" />
 	<property name="main-class" value="LnOS" />
 
 	<!--Clean previous build dir -->
@@ -20,9 +22,9 @@
 			includeAntRuntime="ture">
 			<classpath>
 				<!-- change to referenced location -->
-				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar" />
+				<path id="org.junit" location="${JUnit4.dir}/junit.jar" />
 				<path
-					location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
+					location="${JUnit4.dir}/org.hamcrest.core_1.3.0.v201303031735.jar" />
 			</classpath>
 		</javac>
 	</target>
@@ -58,9 +60,9 @@
 			<classpath>
 				<pathelement path="${classes.dir}" />
 				<!-- change to referenced location -->
-				<path id="org.junit" location="D:/JAVA Workspace/apache-ant-1.9.2/lib/junit.jar" />
+				<path id="org.junit" location="${JUnit4.dir}/junit.jar" />
 				<path
-					location="D:/JAVA Workspace/apache-ant-1.9.2/lib/org.hamcrest.core_1.1.0.v20090501071000.jar" />
+					location="${JUnit4.dir}/org.hamcrest.core_1.3.0.v201303031735.jar" />
 			</classpath>
 
 			<batchtest fork="yes" todir="${reports.dir}/raw/">
