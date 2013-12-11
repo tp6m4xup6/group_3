@@ -28,6 +28,10 @@ local.properties
 # PDT-specific
 .buildpath
 
+# JUnit test result
+reports/
+.html
+.xml
 
 #################
 ## Visual Studio
