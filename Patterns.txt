@@ -1,9 +1,7 @@
 PatternDownload
   下載.CSV檔到local目的地
-  INPUT:
-  PUTPUT:
 
 PatternReadCSV
   讀取.CSV檔的資料
-  INPUT:
-  OUTPUT:
+  INPUT:  .csv file path
+  RETURN: csv data from input file
