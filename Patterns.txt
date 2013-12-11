@@ -1,7 +1,17 @@
 PatternDownload
   下載.CSV檔到local目的地
+  CONTENT:
+    FileDownload.getWebHtml(webUrl);
+      抓webUrl的html訊息
+    FileDownload.pregUrl(html);
+      從html 的內容用regular expreesion抓取下載的csv檔網址
+    FileDownload.loadUrlFile(download_url, "src", "hiv.zip");
+      從網址下載檔案  存到路徑src中  檔名hiv.zip
+
 
 PatternReadCSV
   讀取.CSV檔的資料
   INPUT:  .csv file path
   RETURN: csv data from input file
+  CONTENT:
+    getCSVData(String path):從path取得.csv檔路徑,並call readCSV()將內容讀進arraylist
