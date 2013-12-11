@@ -23,7 +23,7 @@ public class LnOS {
 
 				System.out.println("download url=" + download_url);
 
-				FileDownload.loadUrlFile(download_url, "CSV", "hiv.zip");
+				FileDownload.loadUrlFile(download_url, "src", "hiv.zip");
 
 				wait_download = false;
 			} catch (NullPointerException e) {
