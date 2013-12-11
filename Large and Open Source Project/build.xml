@@ -38,13 +38,9 @@
 			</manifest>
 		</jar>
 	</target>
-<<<<<<< HEAD
-			
-	<!--Run-->
-=======
+
 
 	<!--Run -->
->>>>>>> 4895680fb03b91859f7f322e910914038335189d
 	<target name="run" depends="jar">
 		<java jar="${jar.dir}/${ant.project.name}.jar" fork="true" />
 	</target>
@@ -80,7 +76,6 @@
 			<fileset dir="${reports.dir}/raw/">
 				<include name="TEST-*.xml" />
 			</fileset>
-			<!--strange@@ -->
 			<report format="frames" todir="${reports.dir}\html" />
 		</junitreport>
 	</target>
