@@ -16,7 +16,7 @@ public class PatternDownload {
 	 * @return no return (download file from world bank website)
 	 * @throws IOException 
 	 */
-	public boolean getCSVData(String path) throws IOException {
+	public boolean getDownload(String path) throws IOException {
 
 		boolean wait_download = true;
 
@@ -24,7 +24,7 @@ public class PatternDownload {
 		while (wait_download) {
 			try {
 				// open HIV opendata download page and save url to html
-				String webUrl = "http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS";
+				String webUrl = path;
 				String html = FileDownload.getWebHtml(webUrl);
 				System.out.println("download page html=" + html);
 
