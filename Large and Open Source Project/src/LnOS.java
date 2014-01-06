@@ -19,7 +19,7 @@ public class LnOS {
 */		
 		
 		
-		
+		GraphDrawing.drawImage();
 		
 		
 		
@@ -31,7 +31,7 @@ public class LnOS {
 		
 		
 	//	The way to read hivinfo table 
-	/*	
+		/*		
 		ArrayList<ArrayList<String>>  dataHiv=new ArrayList<ArrayList<String>>();
 		dataHiv=DBconnect.getHivSQL();
 		
@@ -50,7 +50,7 @@ public class LnOS {
 		boolean born_sucess= DBconnect.Born_upload("born.csv");
 	*/
 		
-	
+/*	
 		ArrayList<ArrayList<String>>  dataBorn=new ArrayList<ArrayList<String>>();
 		dataBorn=DBconnect.getBornSQL();
 		
@@ -63,7 +63,7 @@ public class LnOS {
 			System.out.print(dataBorn.get(i).get(5).toString()+" ");
 			System.out.println(dataBorn.get(i).get(6).toString());
 		}
-	
+*/	
 		
 	} // end of main()
 

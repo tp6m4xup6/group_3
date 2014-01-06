@@ -8,6 +8,12 @@ import java.util.ArrayList;
 
 public class DBconnect {
 	
+	/*
+	 * upload hiv.csv to database	
+	 * path: the site of hiv.csv
+	 */
+	
+	
 	public static boolean Hiv_upload(String path) {
 
 		String Country_name,Country_code,year_2012,year_2013;
@@ -66,6 +72,9 @@ public class DBconnect {
 		return true;
 	}
 	
+	/*
+	 * read database's table "hivinfo"  as  ArrayList<ArrayList<String>>
+	 */
 	
 	
 	public static ArrayList<ArrayList<String>> getHivSQL(){
@@ -102,6 +111,11 @@ public class DBconnect {
 		}	 
 		return dataHiv;
 	}
+	
+	/*
+	 * upload born.csv to database	
+	 * path: the site of hiv.csv
+	 */
 	
 	
 	public static boolean Born_upload(String path) {
@@ -174,7 +188,9 @@ public class DBconnect {
 		return true;
 	}	
 	
-	
+	/*
+	 * read database's table "borninfo"  as  ArrayList<ArrayList<String>>
+	 */
 	
 	
 	public static ArrayList<ArrayList<String>> getBornSQL(){
