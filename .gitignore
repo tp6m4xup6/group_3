@@ -29,7 +29,7 @@ local.properties
 .buildpath
 
 # JUnit test result
-reports/
+Large and Open Source Project/reports/
 .html
 .xml
 
