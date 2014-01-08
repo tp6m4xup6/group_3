@@ -16,9 +16,9 @@ public class LnOS {
 
 		UnZIP.unZip("CSV/hiv.zip", "CSV/new/");
 
-		if(CheckUpdate.hasUpdate("CSV/origin/", "CSV/new/")){
+		if (CheckUpdate.hasUpdate("CSV/origin/", "CSV/new/")) {
 			System.out.println("Data updated!");
-		}else {
+		} else {
 			System.out.println("Data no update");
 		}
 

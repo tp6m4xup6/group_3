@@ -10,18 +10,18 @@ import org.junit.Test;
  * testCheckCSV: test if the CSV file is not empty.
  * 
  * @author j9988t
- *
+ * 
  */
 
 public class DataCSVTest {
-	
+
 	PatternReadCSV factoryCSV = new PatternReadCSV();
-	
+
 	DataCSV testCSV = factoryCSV.getCSVData("test.csv");
-	
+
 	@Before
 	public void setUp() throws Exception {
-		
+
 	}
 
 	@Test
@@ -36,7 +36,7 @@ public class DataCSVTest {
 
 	@Test
 	public void testPrintCSV() {
-		//only need to call checkCSV()
+		// only need to call checkCSV()
 		assertFalse(!testCSV.checkCSV());
 	}
 
@@ -45,4 +45,4 @@ public class DataCSVTest {
 		assertFalse(!testCSV.checkCSV());
 	}
 
-}	//end of DataCSVTest
+} // end of DataCSVTest

@@ -79,7 +79,7 @@ public class Mail {
 	 * @throws MessagingException
 	 * @throws AddressException
 	 */
-	public void Msg() throws AddressException, MessagingException{
+	public void Msg() throws AddressException, MessagingException {
 		Message msg = new MimeMessage(session);
 		// set LnOS group3 mail address
 		msg.setFrom(new InternetAddress(fromMailAccount));

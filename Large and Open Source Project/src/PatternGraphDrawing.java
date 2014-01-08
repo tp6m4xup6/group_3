@@ -2,10 +2,11 @@ import java.io.IOException;
 
 /**
  * A factory that will Draw Image
+ * 
  * @author perfume776
  */
-public class PatternGraphDrawing{
-	public GraphDrawing drawGraph(){
+public class PatternGraphDrawing {
+	public GraphDrawing drawGraph() {
 		GraphDrawing temp = new GraphDrawing();
 		GraphDrawing.DevelopedCountry();
 		try {
@@ -16,5 +17,5 @@ public class PatternGraphDrawing{
 		}
 		return temp;
 	}
-	
+
 }

@@ -7,16 +7,15 @@ import org.junit.Test;
 
 /**
  * testGetWebHtml: test if it can get the web path.<br>
- * testPregUrl: test if the html label which is converted is equal to url.<br> 
+ * testPregUrl: test if the html label which is converted is equal to url.<br>
  * testLoadUrlFile: test if it can download a right CSV file.
- *  
+ * 
  * @author j9988t
- *
+ * 
  */
 
 public class FileDownloadTest {
 
-	
 	@Before
 	public void setUp() throws Exception {
 	}
@@ -51,4 +50,4 @@ public class FileDownloadTest {
 			assertEquals(flag, 1);
 		}
 	}
-}	//end of class FileDownloadTest
+} // end of class FileDownloadTest

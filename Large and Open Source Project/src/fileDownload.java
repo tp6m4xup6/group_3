@@ -81,8 +81,7 @@ public class FileDownload {
 	 * download file from urlPath savaParh:the download file saved site
 	 * fileName:the download file named
 	 */
-	public static String loadUrlFile(String urlPath, String savePath,
-			String fileName) throws IOException {
+	public static String loadUrlFile(String urlPath, String savePath, String fileName) throws IOException {
 		String msg = "";
 
 		System.out.println("start download--->" + urlPath);
@@ -94,8 +93,7 @@ public class FileDownload {
 			InputStream is = zeroFile.openStream();
 
 			// get sub filename
-			String tmpName = name.substring(name.lastIndexOf("."),
-					name.length());
+			String tmpName = name.substring(name.lastIndexOf("."), name.length());
 
 			// filename
 			msg = fileName + tmpName;
@@ -104,8 +102,7 @@ public class FileDownload {
 			// catch 1048576 bytes
 			byte[] b = new byte[1048576];
 
-			FileOutputStream fs = new FileOutputStream(savePath + "\\"
-					+ ((fileName.indexOf(".") == -1) ? msg : fileName));
+			FileOutputStream fs = new FileOutputStream(savePath + "\\" + ((fileName.indexOf(".") == -1) ? msg : fileName));
 			int len;
 			while ((len = bs.read(b, 0, b.length)) != -1) {
 				fs.write(b, 0, len);

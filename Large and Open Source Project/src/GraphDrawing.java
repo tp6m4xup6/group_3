@@ -14,32 +14,20 @@ public class GraphDrawing {
 	public static ArrayList<String> LowCountry = new ArrayList<String>();
 
 	/**
-	 * add country name to arrayList according to it is Developed Country or not
+	 * add country name to arraylist according to it is Developed Country or not
 	 * 
 	 * @author perfume776
 	 */
 	public static void DevelopedCountry() {
-
 		PatternReadCSV factoryCSV = new PatternReadCSV();
-<<<<<<< HEAD
-		DataCSV csv = factoryCSV.getCSVData("country.csv");
+		DataCSV csv = factoryCSV.getCSVData("country2.csv");
 		for (int i = 0; i < csv.data.size(); i++) {
 			// System.out.print(csv.data.get(i).get(3) + "\n");
-			if (csv.data.get(i).get(3).indexOf("high") != -1)
+			if (csv.data.get(i).get(3).indexOf("高") == 1)
 				HighCountry.add(csv.data.get(i).get(1));
-			else if (csv.data.get(i).get(3).indexOf("mid") != -1)
+			else if (csv.data.get(i).get(3).indexOf("中") == 1)
 				MidCountry.add(csv.data.get(i).get(1));
-			else if (csv.data.get(i).get(3).indexOf("low") != -1)
-=======
-		DataCSV csv = factoryCSV.getCSVData("country2.csv");
-		for(int i=0;i<csv.data.size();i++){
-			//System.out.print(csv.data.get(i).get(3) + "\n");
-			if(csv.data.get(i).get(3).indexOf("��") == 1)
-				HighCountry.add(csv.data.get(i).get(1));
-			else if(csv.data.get(i).get(3).indexOf("��") == 1)
-				MidCountry.add(csv.data.get(i).get(1));
-			else if(csv.data.get(i).get(3).indexOf("�C") == 1)
->>>>>>> origin/Image2
+			else if (csv.data.get(i).get(3).indexOf("低") == 1)
 				LowCountry.add(csv.data.get(i).get(1));
 			else
 				LowCountry.add(csv.data.get(i).get(1));
@@ -52,9 +40,7 @@ public class GraphDrawing {
 	 * 
 	 * @author perfume776
 	 */
-
 	public static void drawImage() throws IOException {
-
 		DevelopedCountry();
 		ArrayList<ArrayList<String>> StringHiv = new ArrayList<ArrayList<String>>();
 		ArrayList<ArrayList<String>> StringBorn = new ArrayList<ArrayList<String>>();
@@ -114,12 +100,12 @@ public class GraphDrawing {
 				continue;
 		}
 
-		//System.out.print(HivHighValue + "\t" + HivHighCount + "\n");
-		//System.out.print(HivMidValue + "\t" + HivMidCount + "\n");
-		//System.out.print(HivLowValue + "\t" + HivLowCount + "\n");
-		//System.out.print(BornHighValue + "\t" + BornHighCount + "\n");
-		//System.out.print(BornMidValue + "\t" + BornMidCount + "\n");
-		//System.out.print(BornLowValue + "\t" + BornLowCount + "\n");
+		System.out.print(HivHighValue + "\t" + HivHighCount + "\n");
+		System.out.print(HivMidValue + "\t" + HivMidCount + "\n");
+		System.out.print(HivLowValue + "\t" + HivLowCount + "\n");
+		System.out.print(BornHighValue + "\t" + BornHighCount + "\n");
+		System.out.print(BornMidValue + "\t" + BornMidCount + "\n");
+		System.out.print(BornLowValue + "\t" + BornLowCount + "\n");
 		DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 		dataset.addValue(HivHighValue / (double) HivHighCount, "Hiv", "High");
 		dataset.addValue(HivMidValue / (double) HivMidCount, "Hiv", "Mid");
@@ -128,7 +114,15 @@ public class GraphDrawing {
 		dataset.addValue(BornMidValue / (double) BornMidCount / 1000, "Born", "Mid");
 		dataset.addValue(BornLowValue / (double) BornLowCount / 1000, "Born", "Low");
 
-		JFreeChart chart = ChartFactory.createBarChart3D("Title", "Developed Country", "%", dataset, PlotOrientation.VERTICAL, true, false, false);
+		JFreeChart chart = ChartFactory.createBarChart3D("Title", // 圖的標題
+				"Developed Country", // x 座標標題
+				"%", // y 座標標題
+				dataset, // 你放數據的地方
+				PlotOrientation.VERTICAL, // 圖表方向：水平、垂直
+				true, // 是否顯示圖例
+				false, // 是否 tooltips 工具
+				false // 是否生成URL
+				);
 		FileOutputStream fos_jpg = null;
 		try {
 			fos_jpg = new FileOutputStream("print.jpg");
