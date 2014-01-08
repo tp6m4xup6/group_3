@@ -19,7 +19,7 @@ public class GraphDrawingTest {
 	
 	@Before
 	public void setUp() throws Exception {
-		drawImage.DevelopedCountry();
+		GraphDrawing.DevelopedCountry();
 	}
 	
 	@Test

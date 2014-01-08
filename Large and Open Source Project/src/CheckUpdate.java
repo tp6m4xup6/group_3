@@ -28,8 +28,8 @@ public class CheckUpdate {
 				updateFiles(originFile, newFile);
 				return true;
 			} else {
-				for (int i = 0; i < originFile.list().length-1; i++) {
-					if (!CheckUpdate.isSame(originFile.list()[i], newFile.list()[i])) {
+				for (int i = 0; i < originFile.list().length - 1; i++) {
+					if (!CheckUpdate.isSame(originFile.getPath() + "/" + originFile.list()[i], newFile.getPath() + "/" + newFile.list()[i])) {
 						updateFiles(originFile, newFile);
 						return true;
 					}
@@ -68,7 +68,7 @@ public class CheckUpdate {
 	 *            - file path
 	 * @return String - file hash code by MD5
 	 */
-	private static String fileMD5(String path) {	
+	private static String fileMD5(String path) {
 		MessageDigest md = null;
 		try {
 			md = MessageDigest.getInstance("MD5");
