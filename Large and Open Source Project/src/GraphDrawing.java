@@ -21,14 +21,14 @@ public class GraphDrawing {
 	 */
 	public void DevelopedCountry(){
 		PatternReadCSV factoryCSV = new PatternReadCSV();
-		DataCSV csv = factoryCSV.getCSVData("country.csv");
+		DataCSV csv = factoryCSV.getCSVData("country2.csv");
 		for(int i=0;i<csv.data.size();i++){
 			//System.out.print(csv.data.get(i).get(3) + "\n");
-			if(csv.data.get(i).get(3).indexOf("high") != -1)
+			if(csv.data.get(i).get(3).indexOf("°ª") == 1)
 				HighCountry.add(csv.data.get(i).get(1));
-			else if(csv.data.get(i).get(3).indexOf("mid") != -1)
+			else if(csv.data.get(i).get(3).indexOf("¤¤") == 1)
 				MidCountry.add(csv.data.get(i).get(1));
-			else if(csv.data.get(i).get(3).indexOf("low") != -1)
+			else if(csv.data.get(i).get(3).indexOf("§C") == 1)
 				LowCountry.add(csv.data.get(i).get(1));
 			else
 				LowCountry.add(csv.data.get(i).get(1));
