@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 /**
@@ -36,8 +38,9 @@ public class DataCSV {
 	 */
 	public void readCSV() throws IOException {
 
-		BufferedReader rd = new BufferedReader(new FileReader(this.filePath));
-
+		//BufferedReader rd = new BufferedReader(new FileReader(this.filePath));
+		InputStreamReader isr = new InputStreamReader(new FileInputStream(this.filePath), "UTF-8");
+		BufferedReader rd = new BufferedReader(isr);
 		// String to store data of single line temporarily
 		String line = null;
 
