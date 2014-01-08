@@ -8,6 +8,7 @@ public class LnOS {
 
 		PatternReadCSV factoryCSV = new PatternReadCSV();
 		PatternDownload factoryDownload = new PatternDownload();
+		PatternGraphDrawing factoryGraph = new PatternGraphDrawing(); 
 		
 /*		
 		@SuppressWarnings("unused")
@@ -18,11 +19,9 @@ public class LnOS {
 		System.out.println("run success");
 */		
 		
-		
-		GraphDrawing.drawImage();
-		
-		
-		
+		//draw image
+		factoryGraph.drawGraph();
+
 		
 	//	The way to upload hiv.csv to database	
 	/*  
