@@ -19,7 +19,7 @@ public class LnOS {
 */		
 		
 		
-		
+		GraphDrawing.drawImage();
 		
 		
 		
@@ -31,7 +31,11 @@ public class LnOS {
 		
 		
 	//	The way to read hivinfo table 
+<<<<<<< HEAD
 		
+=======
+		/*		
+>>>>>>> origin/Image
 		ArrayList<ArrayList<String>>  dataHiv=new ArrayList<ArrayList<String>>();
 		dataHiv=DBconnect.getHivSQL();
 		
