@@ -15,8 +15,6 @@ import org.junit.Test;
 
 public class DataCSVTest {
 	
-	
-	
 	PatternReadCSV factoryCSV = new PatternReadCSV();
 	
 	DataCSV testCSV = factoryCSV.getCSVData("test.csv");

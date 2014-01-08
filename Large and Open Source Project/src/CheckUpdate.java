@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -10,7 +11,40 @@ import java.security.NoSuchAlgorithmException;
  * @author OEG
  * 
  */
-public class CheckSameFile {
+public class CheckUpdate {
+
+	public static boolean hasUpdate(String pathOrigin, String pathNew) {
+		File originFile = new File(pathOrigin);
+		File newFile = new File(pathNew);
+
+		if (!originFile.exists())
+			originFile.mkdir();
+
+		if (originFile.list().length == 0) {
+			updateFiles(originFile, newFile);
+			return true;
+		} else {
+			if (newFile.list().length != originFile.list().length) {
+				updateFiles(originFile, newFile);
+				return true;
+			} else {
+				for (int i = 0; i < originFile.list().length-1; i++) {
+					if (!CheckUpdate.isSame(originFile.list()[i], newFile.list()[i])) {
+						updateFiles(originFile, newFile);
+						return true;
+					}
+				}
+				return false;
+			}
+		}
+
+	} // end of hasUpdate()
+
+	private static void updateFiles(File originFile, File newFile) {
+		originFile.delete();
+		newFile.renameTo(originFile);
+		newFile.mkdir();
+	}
 
 	/**
 	 * check two file are same or not.
@@ -34,8 +68,7 @@ public class CheckSameFile {
 	 *            - file path
 	 * @return String - file hash code by MD5
 	 */
-	private static String fileMD5(String path) {
-
+	private static String fileMD5(String path) {	
 		MessageDigest md = null;
 		try {
 			md = MessageDigest.getInstance("MD5");
@@ -81,4 +114,4 @@ public class CheckSameFile {
 
 	} // end of fileMD5()
 
-} // end of class CheckSameFile
+} // end of class CheckUpdate

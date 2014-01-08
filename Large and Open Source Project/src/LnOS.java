@@ -1,4 +1,3 @@
-import java.io.File;
 import java.io.IOException;
 
 public class LnOS {
@@ -17,20 +16,10 @@ public class LnOS {
 
 		UnZIP.unZip("CSV/hiv.zip", "CSV/new/");
 
-		File originFile = new File("CSV/origin/");
-		File newFile = new File("CSV/new/");
-
-		if (!originFile.exists()) {
-			originFile.mkdir();
-		} else if (originFile.list().length == 0) {
-			originFile.delete();
-			newFile.renameTo(originFile);
-			newFile.mkdir();
-		} else {
-			for (int i = 0; i < originFile.list().length; i++) {
-				if (!CheckSameFile.isSame(originFile.list()[i], newFile.list()[i]))
-					System.out.println("!!!!!!");
-			}
+		if(CheckUpdate.hasUpdate("CSV/origin/", "CSV/new/")){
+			System.out.println("Data updated!");
+		}else {
+			System.out.println("Data no update");
 		}
 
 		try {

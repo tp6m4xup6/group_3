@@ -72,7 +72,7 @@ public class FileDownload {
 			temp = temp.replace("\">CSV", "");
 		}
 
-		System.out.println("------pregUrl down");
+		System.out.println("------pregUrl done");
 
 		return temp;
 	} // end of pregUrl()

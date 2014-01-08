@@ -26,7 +26,6 @@ public class PatternDownload {
 				// open HIV opendata download page and save url to html
 				String webUrl = path;
 				String html = FileDownload.getWebHtml(webUrl);
-				System.out.println("download page html=" + html);
 
 				// catch the download url (ex:http:\\xXXXX.download)
 				String download_url = FileDownload.pregUrl(html);

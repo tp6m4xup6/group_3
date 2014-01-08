@@ -14,7 +14,7 @@ public class GraphDrawing {
 	public static ArrayList<String> LowCountry = new ArrayList<String>();
 
 	/**
-	 * add country name to arraylist according to it is Developed Country or not
+	 * add country name to arrayList according to it is Developed Country or not
 	 * 
 	 * @author perfume776
 	 */
