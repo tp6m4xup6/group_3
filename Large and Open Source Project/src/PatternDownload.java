@@ -2,9 +2,10 @@ import java.io.IOException;
 
 /**
  * A factory that will generate DataCSV
+ * 
  * @author OEG
  */
-
+// Download path -> Large and Open Source Project\CSV
 public class PatternDownload {
 
 	/**
@@ -12,15 +13,14 @@ public class PatternDownload {
 	 * 
 	 * @author tp6m4xup6
 	 * @param FileDownPattern
-	 *           
+	 * 
 	 * @return no return (download file from world bank website)
-	 * @throws IOException 
+	 * @throws IOException
 	 */
 	public boolean getDownload(String path) throws IOException {
 
 		boolean wait_download = true;
 
-		
 		while (wait_download) {
 			try {
 				// open HIV opendata download page and save url to html
@@ -40,11 +40,10 @@ public class PatternDownload {
 				System.out.println("\nThe connection went wrong! Try again!");
 			}
 		}
-		
-		if(wait_download==true){
+
+		if (wait_download == true) {
 			return false;
-		}
-		else{ 
+		} else {
 			return true;
 		}
 	} // end of getCSVData()

@@ -27,12 +27,12 @@ public class Mail {
 	private String fromMailAccount = "lnos.group3";
 	// password of LnOS group3
 	private String passwd = "opensourceG3";
-	private String subject = "LnOS group3";
+	private String subject = "LnOS Group3";
 	private String content = "mail test";
 
 	Properties props = new Properties();
 
-	// set password@@
+	// set fromMailAccount & password
 	Session session = Session.getDefaultInstance(props, new Authenticator() {
 		@Override
 		protected PasswordAuthentication getPasswordAuthentication() {
@@ -67,10 +67,9 @@ public class Mail {
 		props.setProperty("mail.smtp.host", "smtp.gmail.com");
 		props.setProperty("mail.smtp.socketFactory.class", SSL_FACTORY);
 		props.setProperty("mail.smtp.socketFactory.fallback", "false");
-		//props.setProperty("mail.smtp.starttls.enable", "true");
 		props.setProperty("mail.smtp.port", "465");
 		props.setProperty("mail.smtp.socketFactory.port", "465");
-		session.setDebug(true);
+		session.setDebug(false);
 	}// end of InitialSet()
 
 	/**
@@ -80,7 +79,7 @@ public class Mail {
 	 * @throws MessagingException
 	 * @throws AddressException
 	 */
-	public void Msg() throws AddressException, MessagingException {
+	public void Msg() throws AddressException, MessagingException{
 		Message msg = new MimeMessage(session);
 		// set LnOS group3 mail address
 		msg.setFrom(new InternetAddress(fromMailAccount));
@@ -100,10 +99,10 @@ public class Mail {
 		// add content part
 		mainPart.addBodyPart(contentPart);
 		// set attached file
-		DataSource dataSource = new FileDataSource("C:/Users/OEG/Documents/GitHub/group_3/Large and Open Source Project/src/hiv.zip");
+		DataSource dataSource = new FileDataSource("print.jpg");
 		DataHandler dataHandler = new DataHandler(dataSource);
 		dataPart.setDataHandler(dataHandler);
-		dataPart.setFileName("LnOS_group3.zip");
+		dataPart.setFileName("Chart.jpg");
 		// add data part
 		mainPart.addBodyPart(dataPart);
 		// save mail
