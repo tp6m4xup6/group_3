@@ -1,4 +1,6 @@
 import java.io.IOException;
+import java.util.*;
+
 
 public class LnOS {
 
@@ -15,10 +17,20 @@ public class LnOS {
 		}
 
 		PatternReadCSV factoryCSV = new PatternReadCSV();
+<<<<<<< HEAD
 
+=======
+		PatternDownload factoryDownload = new PatternDownload();
+		
+/*		
+>>>>>>> origin/12/26-Data-Base-connect
 		@SuppressWarnings("unused")
 		DataCSV csv = factoryCSV.getCSVData("test.csv");
+		
+		Download path -> Large and Open Source Project\CSV
+		factoryDownload.getDownload("http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS");
 		System.out.println("run success");
+<<<<<<< HEAD
 		/*
 		 * boolean wait_download = true;
 		 * 
@@ -40,6 +52,61 @@ public class LnOS {
 		 * System.out.println("\nThe connection went wrong! Try again!"); } }
 		 */
 
+=======
+*/		
+		
+		
+		GraphDrawing.drawImage();
+		
+		
+		
+		
+	//	The way to upload hiv.csv to database	
+	/*  
+		boolean hiv_sucess= DBconnect.Hiv_upload("hiv.csv");
+	*/
+		
+		
+	//	The way to read hivinfo table 
+<<<<<<< HEAD
+		
+=======
+		/*		
+>>>>>>> origin/Image
+		ArrayList<ArrayList<String>>  dataHiv=new ArrayList<ArrayList<String>>();
+		dataHiv=DBconnect.getHivSQL();
+		
+		for(int i=0;i<dataHiv.size();i++){
+			System.out.print(dataHiv.get(i).get(0).toString()+" ");
+			System.out.print(dataHiv.get(i).get(1).toString()+" ");
+			System.out.print(dataHiv.get(i).get(2).toString()+" ");
+			System.out.print(dataHiv.get(i).get(3).toString()+" ");
+			System.out.println(dataHiv.get(i).get(4).toString());
+		}
+	
+		
+	//	The way to read borninfo table 
+		
+	/*	
+		boolean born_sucess= DBconnect.Born_upload("born.csv");
+	*/
+		
+/*	
+		ArrayList<ArrayList<String>>  dataBorn=new ArrayList<ArrayList<String>>();
+		dataBorn=DBconnect.getBornSQL();
+		
+		for(int i=0;i<dataBorn.size();i++){
+			System.out.print(dataBorn.get(i).get(0).toString()+" ");
+			System.out.print(dataBorn.get(i).get(1).toString()+" ");
+			System.out.print(dataBorn.get(i).get(2).toString()+" ");
+			System.out.print(dataBorn.get(i).get(3).toString()+" ");
+			System.out.print(dataBorn.get(i).get(4).toString()+" ");
+			System.out.print(dataBorn.get(i).get(5).toString()+" ");
+			System.out.println(dataBorn.get(i).get(6).toString());
+		}
+*/	
+		
+>>>>>>> origin/12/26-Data-Base-connect
 	} // end of main()
 
 } // end of class LnOS
