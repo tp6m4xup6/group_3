@@ -18,7 +18,11 @@ public class GraphDrawing {
 	 * 
 	 * @author perfume776
 	 */
+<<<<<<< HEAD
 	private static void DevelopedCountry() {
+=======
+	public void DevelopedCountry(){
+>>>>>>> origin/Image2
 		PatternReadCSV factoryCSV = new PatternReadCSV();
 		DataCSV csv = factoryCSV.getCSVData("country.csv");
 		for (int i = 0; i < csv.data.size(); i++) {
@@ -40,7 +44,11 @@ public class GraphDrawing {
 	 * 
 	 * @author perfume776
 	 */
+<<<<<<< HEAD
 	public static void drawImage() throws IOException {
+=======
+	public void drawImage() throws IOException{
+>>>>>>> origin/Image2
 		DevelopedCountry();
 		ArrayList<ArrayList<String>> StringHiv = new ArrayList<ArrayList<String>>();
 		ArrayList<ArrayList<String>> StringBorn = new ArrayList<ArrayList<String>>();
