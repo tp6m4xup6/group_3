@@ -103,12 +103,12 @@ public class GraphDrawing {
 				continue;
 		}
 
-		System.out.print(HivHighValue + "\t" + HivHighCount + "\n");
-		System.out.print(HivMidValue + "\t" + HivMidCount + "\n");
-		System.out.print(HivLowValue + "\t" + HivLowCount + "\n");
-		System.out.print(BornHighValue + "\t" + BornHighCount + "\n");
-		System.out.print(BornMidValue + "\t" + BornMidCount + "\n");
-		System.out.print(BornLowValue + "\t" + BornLowCount + "\n");
+		//System.out.print(HivHighValue + "\t" + HivHighCount + "\n");
+		//System.out.print(HivMidValue + "\t" + HivMidCount + "\n");
+		//System.out.print(HivLowValue + "\t" + HivLowCount + "\n");
+		//System.out.print(BornHighValue + "\t" + BornHighCount + "\n");
+		//System.out.print(BornMidValue + "\t" + BornMidCount + "\n");
+		//System.out.print(BornLowValue + "\t" + BornLowCount + "\n");
 		DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 		dataset.addValue(HivHighValue / (double) HivHighCount, "Hiv", "High");
 		dataset.addValue(HivMidValue / (double) HivMidCount, "Hiv", "Mid");

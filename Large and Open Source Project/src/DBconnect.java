@@ -230,4 +230,53 @@ public class DBconnect {
 		return dataHiv;
 	}
 	
+	
+	public static boolean DropHiv() {
+		//System.out.print("start drop\n");
+		
+		try{
+			Class.forName("org.postgresql.Driver").newInstance();
+			String url = "jdbc:postgresql://210.61.10.89:9999/Team3";
+			Connection con = DriverManager.getConnection(url, "Team3", "2013postgres");
+			Statement st = con.createStatement();
+			
+			String sql = "TRUNCATE TABLE hivinfo;";
+			ResultSet rs = st.executeQuery(sql);
+		
+			st.close();
+			con.close();
+		}
+		catch(Exception ee){
+			System.out.print(ee.getMessage());
+		}	 	
+		
+		return true;
+	}
+	
+	
+	
+	public static boolean DropBorn() {
+		//System.out.print("start drop\n");
+		
+		try{
+			Class.forName("org.postgresql.Driver").newInstance();
+			String url = "jdbc:postgresql://210.61.10.89:9999/Team3";
+			Connection con = DriverManager.getConnection(url, "Team3", "2013postgres");
+			Statement st = con.createStatement();
+			
+			String sql = "TRUNCATE TABLE borninfo;";
+			ResultSet rs = st.executeQuery(sql);
+		
+			st.close();
+			con.close();
+		}
+		catch(Exception ee){
+			System.out.print(ee.getMessage());
+		}	 	
+		
+		return true;
+	}
+	
+	
 }
+

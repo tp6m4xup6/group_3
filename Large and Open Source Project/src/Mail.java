@@ -111,7 +111,6 @@ public class Mail {
 		// send mail
 		Transport.send(msg);
 		System.out.println("Sending mail to " + toMailAddr + " is done.");
-
 	}// end of Msg()
 
 }// end of class Mail

@@ -6,7 +6,6 @@ public class LnOS {
 
 		PatternDownload factoryDownload = new PatternDownload();
 
-
 		try {
 			factoryDownload.getDownload("http://data.worldbank.org.cn/indicator/SH.HIV.1524.MA.ZS");
 		} catch (IOException e1) {
