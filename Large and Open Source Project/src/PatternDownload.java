@@ -5,7 +5,7 @@ import java.io.IOException;
  * 
  * @author OEG
  */
-// Download path -> Large and Open Source Project\CSV
+
 public class PatternDownload {
 
 	/**
@@ -17,7 +17,7 @@ public class PatternDownload {
 	 * @return no return (download file from world bank website)
 	 * @throws IOException
 	 */
-	public boolean getDownload(String path) throws IOException {
+	public boolean getDownloadHiv(String path) throws IOException {
 
 		boolean wait_download = true;
 
@@ -26,6 +26,7 @@ public class PatternDownload {
 				// open HIV opendata download page and save url to html
 				String webUrl = path;
 				String html = FileDownload.getWebHtml(webUrl);
+				// System.out.println("download page html=" + html);
 
 				// catch the download url (ex:http:\\xXXXX.download)
 				String download_url = FileDownload.pregUrl(html);
@@ -33,6 +34,37 @@ public class PatternDownload {
 				System.out.println("download url=" + download_url);
 
 				FileDownload.loadUrlFile(download_url, "CSV", "hiv.zip");
+
+				wait_download = false;
+			} catch (NullPointerException e) {
+				System.out.println("\nThe connection went wrong! Try again!");
+			}
+		}
+
+		if (wait_download == true) {
+			return false;
+		} else {
+			return true;
+		}
+	} // end of getCSVData()
+
+	public boolean getDownloadBorn(String path) throws IOException {
+
+		boolean wait_download = true;
+
+		while (wait_download) {
+			try {
+				// open HIV opendata download page and save url to html
+				String webUrl = path;
+				String html = FileDownload.getWebHtml(webUrl);
+				// System.out.println("download page html=" + html);
+
+				// catch the download url (ex:http:\\xXXXX.download)
+				String download_url = FileDownload.pregUrl(html);
+
+				System.out.println("download url=" + download_url);
+
+				FileDownload.loadUrlFile(download_url, "CSV", "born.zip");
 
 				wait_download = false;
 			} catch (NullPointerException e) {

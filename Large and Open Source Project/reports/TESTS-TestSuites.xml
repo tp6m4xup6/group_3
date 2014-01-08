@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="j9988t-PC" id="0" name="DBconnectTest" package="" skipped="0" tests="4" time="1.223" timestamp="2014-01-08T17:07:02">
+  <testsuite errors="0" failures="0" hostname="OEG-PC" id="0" name="DBconnectTest" package="" skipped="0" tests="4" time="0.435" timestamp="2014-01-08T18:58:36">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -18,13 +18,13 @@
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
-          <property name="ant.home" value="C:\apache-ant-1.9.2" />
+          <property name="ant.home" value="D:\JAVA Workspace\apache-ant-1.9.2" />
 
           <property name="jar.dir" value="build/jar" />
 
           <property name="java.runtime.version" value="1.7.0_45-b18" />
 
-          <property name="user.name" value="j9988t" />
+          <property name="user.name" value="OEG" />
 
           <property name="build.dir" value="build" />
 
@@ -70,13 +70,13 @@
 
           <property name="main-class" value="LnOS" />
 
-          <property name="ant.file" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
+          <property name="ant.file" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
 
           <property name="os.version" value="6.1" />
 
           <property name="path.separator" value=";" />
 
-          <property name="ant.file.LnOS" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
+          <property name="ant.file.LnOS" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
 
           <property name="java.vm.version" value="24.45-b08" />
 
@@ -84,7 +84,7 @@
 
           <property name="ant.file.type.LnOS" value="file" />
 
-          <property name="ant.library.dir" value="C:\apache-ant-1.9.2\lib" />
+          <property name="ant.library.dir" value="D:\JAVA Workspace\apache-ant-1.9.2\lib" />
 
           <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
 
@@ -94,11 +94,11 @@
 
           <property name="user.script" value="" />
 
-          <property name="user.home" value="C:\Users\j9988t" />
+          <property name="user.home" value="C:\Users\OEG" />
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\javamail-1.4.7;C:\apache-ant-1.9.2\bin;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;." />
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_45\bin;D:\JAVA Workspace\apache-ant-1.9.2\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\Common Files\Ulead Systems\DVD;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;d:\software\Modeltech_pe_edu_10.2a\win32pe_edu;C:\Modeltech_pe_edu_10.2a\win32pe_edu;C:\Program Files\swipl\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;." />
 
           <property name="java.vendor.url" value="http://java.oracle.com/" />
 
@@ -106,9 +106,9 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DBconnectTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-DBconnectTest.xml crashfile=C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher1772820905916149862.properties propsfile=C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\junit5085248228041524052.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DBconnectTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-DBconnectTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher9080434912727941350.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit6729560532934063214.properties" />
 
-          <property name="java.class.path" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build\classes;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\junit.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\mail.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jfreechart-1.0.11.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jcommon-1.0.14.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\postgresql-9.3-1100.jdbc41.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\zip4j_1.3.2.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project;C:\apache-ant-1.9.2\lib\ant-launcher.jar;C:\apache-ant-1.9.2\lib\ant.jar;C:\apache-ant-1.9.2\lib\ant-junit.jar;C:\apache-ant-1.9.2\lib\ant-junit4.jar" />
+          <property name="java.class.path" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build\classes;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\junit.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\mail.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jfreechart-1.0.11.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jcommon-1.0.14.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\postgresql-9.3-1100.jdbc41.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\zip4j_1.3.2.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
 
           <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
 
@@ -122,7 +122,7 @@
 
           <property name="sun.os.patch.level" value="Service Pack 1" />
 
-          <property name="java.io.tmpdir" value="C:\Users\j9988t\AppData\Local\Temp\" />
+          <property name="java.io.tmpdir" value="C:\Users\OEG\AppData\Local\Temp\" />
 
           <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
 
@@ -134,17 +134,17 @@
 
           <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
 
-          <property name="user.dir" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project" />
+          <property name="user.dir" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project" />
 
           <property name="line.separator" value="&#xd;&#xa;" />
 
           <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
 
-          <property name="basedir" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project" />
+          <property name="basedir" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project" />
 
           <property name="ant.java.version" value="1.7" />
 
-          <property name="ant.core.lib" value="C:\apache-ant-1.9.2\lib\ant.jar" />
+          <property name="ant.core.lib" value="D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar" />
 
           <property name="file.encoding" value="MS950" />
 
@@ -156,20 +156,20 @@
 
       </properties>
 
-      <testcase classname="DBconnectTest" name="testBorn_upload" time="0.002" />
+      <testcase classname="DBconnectTest" name="testBorn_upload" time="0.001" />
 
-      <testcase classname="DBconnectTest" name="testGetBornSQL" time="0.699" />
+      <testcase classname="DBconnectTest" name="testGetBornSQL" time="0.193" />
 
       <testcase classname="DBconnectTest" name="testHiv_upload" time="0.0" />
 
-      <testcase classname="DBconnectTest" name="testGetHivSQL" time="0.453" />
+      <testcase classname="DBconnectTest" name="testGetHivSQL" time="0.092" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="j9988t-PC" id="1" name="DataCSVTest" package="" skipped="0" tests="3" time="0.317" timestamp="2014-01-08T17:07:04">
+  <testsuite errors="0" failures="0" hostname="OEG-PC" id="1" name="DataCSVTest" package="" skipped="0" tests="3" time="0.168" timestamp="2014-01-08T18:58:37">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -187,13 +187,13 @@
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
-          <property name="ant.home" value="C:\apache-ant-1.9.2" />
+          <property name="ant.home" value="D:\JAVA Workspace\apache-ant-1.9.2" />
 
           <property name="jar.dir" value="build/jar" />
 
           <property name="java.runtime.version" value="1.7.0_45-b18" />
 
-          <property name="user.name" value="j9988t" />
+          <property name="user.name" value="OEG" />
 
           <property name="build.dir" value="build" />
 
@@ -239,13 +239,13 @@
 
           <property name="main-class" value="LnOS" />
 
-          <property name="ant.file" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
+          <property name="ant.file" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
 
           <property name="os.version" value="6.1" />
 
           <property name="path.separator" value=";" />
 
-          <property name="ant.file.LnOS" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
+          <property name="ant.file.LnOS" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
 
           <property name="java.vm.version" value="24.45-b08" />
 
@@ -253,7 +253,7 @@
 
           <property name="ant.file.type.LnOS" value="file" />
 
-          <property name="ant.library.dir" value="C:\apache-ant-1.9.2\lib" />
+          <property name="ant.library.dir" value="D:\JAVA Workspace\apache-ant-1.9.2\lib" />
 
           <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
 
@@ -263,11 +263,11 @@
 
           <property name="user.script" value="" />
 
-          <property name="user.home" value="C:\Users\j9988t" />
+          <property name="user.home" value="C:\Users\OEG" />
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\javamail-1.4.7;C:\apache-ant-1.9.2\bin;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;." />
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_45\bin;D:\JAVA Workspace\apache-ant-1.9.2\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\Common Files\Ulead Systems\DVD;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;d:\software\Modeltech_pe_edu_10.2a\win32pe_edu;C:\Modeltech_pe_edu_10.2a\win32pe_edu;C:\Program Files\swipl\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;." />
 
           <property name="java.vendor.url" value="http://java.oracle.com/" />
 
@@ -275,9 +275,9 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DataCSVTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-DataCSVTest.xml crashfile=C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher7221862417070826589.properties propsfile=C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\junit3683945614634613876.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner DataCSVTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-DataCSVTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher5698940526744292865.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit4428713200617386379.properties" />
 
-          <property name="java.class.path" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build\classes;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\junit.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\mail.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jfreechart-1.0.11.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jcommon-1.0.14.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\postgresql-9.3-1100.jdbc41.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\zip4j_1.3.2.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project;C:\apache-ant-1.9.2\lib\ant-launcher.jar;C:\apache-ant-1.9.2\lib\ant.jar;C:\apache-ant-1.9.2\lib\ant-junit.jar;C:\apache-ant-1.9.2\lib\ant-junit4.jar" />
+          <property name="java.class.path" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build\classes;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\junit.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\mail.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jfreechart-1.0.11.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jcommon-1.0.14.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\postgresql-9.3-1100.jdbc41.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\zip4j_1.3.2.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
 
           <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
 
@@ -291,7 +291,7 @@
 
           <property name="sun.os.patch.level" value="Service Pack 1" />
 
-          <property name="java.io.tmpdir" value="C:\Users\j9988t\AppData\Local\Temp\" />
+          <property name="java.io.tmpdir" value="C:\Users\OEG\AppData\Local\Temp\" />
 
           <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
 
@@ -303,17 +303,17 @@
 
           <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
 
-          <property name="user.dir" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project" />
+          <property name="user.dir" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project" />
 
           <property name="line.separator" value="&#xd;&#xa;" />
 
           <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
 
-          <property name="basedir" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project" />
+          <property name="basedir" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project" />
 
           <property name="ant.java.version" value="1.7" />
 
-          <property name="ant.core.lib" value="C:\apache-ant-1.9.2\lib\ant.jar" />
+          <property name="ant.core.lib" value="D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar" />
 
           <property name="file.encoding" value="MS950" />
 
@@ -325,18 +325,18 @@
 
       </properties>
 
-      <testcase classname="DataCSVTest" name="testCheckCSV" time="0.002" />
+      <testcase classname="DataCSVTest" name="testCheckCSV" time="0.001" />
 
-      <testcase classname="DataCSVTest" name="testPrintCSV" time="0.0" />
+      <testcase classname="DataCSVTest" name="testPrintCSV" time="0.001" />
 
-      <testcase classname="DataCSVTest" name="testReadCSV" time="0.009" />
+      <testcase classname="DataCSVTest" name="testReadCSV" time="0.012" />
 
       <system-out><![CDATA[]]></system-out>
 
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="j9988t-PC" id="2" name="FileDownloadTest" package="" skipped="0" tests="3" time="4.242" timestamp="2014-01-08T17:07:06">
+  <testsuite errors="0" failures="0" hostname="OEG-PC" id="2" name="FileDownloadTest" package="" skipped="0" tests="3" time="1.954" timestamp="2014-01-08T18:58:38">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -354,13 +354,13 @@
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
-          <property name="ant.home" value="C:\apache-ant-1.9.2" />
+          <property name="ant.home" value="D:\JAVA Workspace\apache-ant-1.9.2" />
 
           <property name="jar.dir" value="build/jar" />
 
           <property name="java.runtime.version" value="1.7.0_45-b18" />
 
-          <property name="user.name" value="j9988t" />
+          <property name="user.name" value="OEG" />
 
           <property name="build.dir" value="build" />
 
@@ -406,13 +406,13 @@
 
           <property name="main-class" value="LnOS" />
 
-          <property name="ant.file" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
+          <property name="ant.file" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
 
           <property name="os.version" value="6.1" />
 
           <property name="path.separator" value=";" />
 
-          <property name="ant.file.LnOS" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
+          <property name="ant.file.LnOS" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
 
           <property name="java.vm.version" value="24.45-b08" />
 
@@ -420,7 +420,7 @@
 
           <property name="ant.file.type.LnOS" value="file" />
 
-          <property name="ant.library.dir" value="C:\apache-ant-1.9.2\lib" />
+          <property name="ant.library.dir" value="D:\JAVA Workspace\apache-ant-1.9.2\lib" />
 
           <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
 
@@ -430,11 +430,11 @@
 
           <property name="user.script" value="" />
 
-          <property name="user.home" value="C:\Users\j9988t" />
+          <property name="user.home" value="C:\Users\OEG" />
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\javamail-1.4.7;C:\apache-ant-1.9.2\bin;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;." />
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_45\bin;D:\JAVA Workspace\apache-ant-1.9.2\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\Common Files\Ulead Systems\DVD;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;d:\software\Modeltech_pe_edu_10.2a\win32pe_edu;C:\Modeltech_pe_edu_10.2a\win32pe_edu;C:\Program Files\swipl\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;." />
 
           <property name="java.vendor.url" value="http://java.oracle.com/" />
 
@@ -442,9 +442,9 @@
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner FileDownloadTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-FileDownloadTest.xml crashfile=C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher8990545274072394388.properties propsfile=C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\junit6890924668193464094.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner FileDownloadTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-FileDownloadTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher7035946211118084982.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit3250879756534373040.properties" />
 
-          <property name="java.class.path" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build\classes;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\junit.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\mail.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jfreechart-1.0.11.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jcommon-1.0.14.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\postgresql-9.3-1100.jdbc41.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\zip4j_1.3.2.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project;C:\apache-ant-1.9.2\lib\ant-launcher.jar;C:\apache-ant-1.9.2\lib\ant.jar;C:\apache-ant-1.9.2\lib\ant-junit.jar;C:\apache-ant-1.9.2\lib\ant-junit4.jar" />
+          <property name="java.class.path" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build\classes;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\junit.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\mail.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jfreechart-1.0.11.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jcommon-1.0.14.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\postgresql-9.3-1100.jdbc41.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\zip4j_1.3.2.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
 
           <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
 
@@ -458,7 +458,7 @@
 
           <property name="sun.os.patch.level" value="Service Pack 1" />
 
-          <property name="java.io.tmpdir" value="C:\Users\j9988t\AppData\Local\Temp\" />
+          <property name="java.io.tmpdir" value="C:\Users\OEG\AppData\Local\Temp\" />
 
           <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
 
@@ -470,17 +470,17 @@
 
           <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
 
-          <property name="user.dir" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project" />
+          <property name="user.dir" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project" />
 
           <property name="line.separator" value="&#xd;&#xa;" />
 
           <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
 
-          <property name="basedir" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project" />
+          <property name="basedir" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project" />
 
           <property name="ant.java.version" value="1.7" />
 
-          <property name="ant.core.lib" value="C:\apache-ant-1.9.2\lib\ant.jar" />
+          <property name="ant.core.lib" value="D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar" />
 
           <property name="file.encoding" value="MS950" />
 
@@ -492,11 +492,11 @@
 
       </properties>
 
-      <testcase classname="FileDownloadTest" name="testLoadUrlFile" time="0.806" />
+      <testcase classname="FileDownloadTest" name="testLoadUrlFile" time="0.701" />
 
-      <testcase classname="FileDownloadTest" name="testPregUrl" time="0.002" />
+      <testcase classname="FileDownloadTest" name="testPregUrl" time="0.001" />
 
-      <testcase classname="FileDownloadTest" name="testGetWebHtml" time="3.353" />
+      <testcase classname="FileDownloadTest" name="testGetWebHtml" time="1.178" />
 
       <system-out><![CDATA[start download--->http://api.worldbank.org/v2/zh/indicator/sh.hiv.1524.ma.zs?downloadformat=csv
 done====>
@@ -509,7 +509,7 @@ Reading Web-
       <system-err><![CDATA[]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="j9988t-PC" id="3" name="GraphDrawingTest" package="" skipped="0" tests="3" time="0.199" timestamp="2014-01-08T17:07:11">
+  <testsuite errors="0" failures="0" hostname="OEG-PC" id="3" name="GraphDrawingTest" package="" skipped="0" tests="3" time="0.106" timestamp="2014-01-08T18:58:41">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -527,13 +527,13 @@ Reading Web-
 
           <property name="java.vm.specification.vendor" value="Oracle Corporation" />
 
-          <property name="ant.home" value="C:\apache-ant-1.9.2" />
+          <property name="ant.home" value="D:\JAVA Workspace\apache-ant-1.9.2" />
 
           <property name="jar.dir" value="build/jar" />
 
           <property name="java.runtime.version" value="1.7.0_45-b18" />
 
-          <property name="user.name" value="j9988t" />
+          <property name="user.name" value="OEG" />
 
           <property name="build.dir" value="build" />
 
@@ -579,13 +579,13 @@ Reading Web-
 
           <property name="main-class" value="LnOS" />
 
-          <property name="ant.file" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
+          <property name="ant.file" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
 
           <property name="os.version" value="6.1" />
 
           <property name="path.separator" value=";" />
 
-          <property name="ant.file.LnOS" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
+          <property name="ant.file.LnOS" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build.xml" />
 
           <property name="java.vm.version" value="24.45-b08" />
 
@@ -593,7 +593,7 @@ Reading Web-
 
           <property name="ant.file.type.LnOS" value="file" />
 
-          <property name="ant.library.dir" value="C:\apache-ant-1.9.2\lib" />
+          <property name="ant.library.dir" value="D:\JAVA Workspace\apache-ant-1.9.2\lib" />
 
           <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
 
@@ -603,11 +603,11 @@ Reading Web-
 
           <property name="user.script" value="" />
 
-          <property name="user.home" value="C:\Users\j9988t" />
+          <property name="user.home" value="C:\Users\OEG" />
 
           <property name="java.specification.vendor" value="Oracle Corporation" />
 
-          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\javamail-1.4.7;C:\apache-ant-1.9.2\bin;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;." />
+          <property name="java.library.path" value="C:\Program Files\Java\jdk1.7.0_45\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.7.0_45\bin;D:\JAVA Workspace\apache-ant-1.9.2\bin;C:\Program Files (x86)\AMD APP\bin\x86_64;C:\Program Files (x86)\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files (x86)\Common Files\Ulead Systems\MPEG;C:\Program Files (x86)\Common Files\Ulead Systems\DVD;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\Java\jdk1.7.0_45\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\MATLAB\R2012a\runtime\win64;C:\Program Files\MATLAB\R2012a\bin;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;d:\software\Modeltech_pe_edu_10.2a\win32pe_edu;C:\Modeltech_pe_edu_10.2a\win32pe_edu;C:\Program Files\swipl\bin;C:\Program Files (x86)\CodeBlocks\MinGW\bin;." />
 
           <property name="java.vendor.url" value="http://java.oracle.com/" />
 
@@ -615,9 +615,9 @@ Reading Web-
 
           <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner GraphDrawingTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-GraphDrawingTest.xml crashfile=C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher8384039994374492156.properties propsfile=C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\junit8248265764351923440.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner GraphDrawingTest filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\reports\raw\TEST-GraphDrawingTest.xml crashfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junitvmwatcher737620121498290662.properties propsfile=C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\junit3642350604621493982.properties" />
 
-          <property name="java.class.path" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\build\classes;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\junit.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\mail.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jfreechart-1.0.11.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jcommon-1.0.14.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\postgresql-9.3-1100.jdbc41.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project\external JARs\zip4j_1.3.2.jar;C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project;C:\apache-ant-1.9.2\lib\ant-launcher.jar;C:\apache-ant-1.9.2\lib\ant.jar;C:\apache-ant-1.9.2\lib\ant-junit.jar;C:\apache-ant-1.9.2\lib\ant-junit4.jar" />
+          <property name="java.class.path" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\build\classes;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\junit.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\JUnit4\org.hamcrest.core_1.3.0.v201303031735.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\mail.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jfreechart-1.0.11.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\jfreechart-1.0.11\jcommon-1.0.14.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\postgresql-9.3-1100.jdbc41.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project\external JARs\zip4j_1.3.2.jar;C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project;C:\Program Files\Java\jdk1.7.0_45\lib;C:\Program Files (x86)\Java\jre7\lib\ext\QTJava.zip;D:\JAVA Workspace\apache-ant-1.9.2\lib\junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-launcher.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit.jar;D:\JAVA Workspace\apache-ant-1.9.2\lib\ant-junit4.jar" />
 
           <property name="ant.version" value="Apache Ant(TM) version 1.9.2 compiled on July 8 2013" />
 
@@ -631,7 +631,7 @@ Reading Web-
 
           <property name="sun.os.patch.level" value="Service Pack 1" />
 
-          <property name="java.io.tmpdir" value="C:\Users\j9988t\AppData\Local\Temp\" />
+          <property name="java.io.tmpdir" value="C:\Users\OEG\AppData\Local\Temp\" />
 
           <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
 
@@ -643,17 +643,17 @@ Reading Web-
 
           <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext;C:\Windows\Sun\Java\lib\ext" />
 
-          <property name="user.dir" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project" />
+          <property name="user.dir" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project" />
 
           <property name="line.separator" value="&#xd;&#xa;" />
 
           <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
 
-          <property name="basedir" value="C:\Users\j9988t\Documents\GitHub\group_3\Large and Open Source Project" />
+          <property name="basedir" value="C:\Users\OEG\Documents\GitHub\group_3\Large and Open Source Project" />
 
           <property name="ant.java.version" value="1.7" />
 
-          <property name="ant.core.lib" value="C:\apache-ant-1.9.2\lib\ant.jar" />
+          <property name="ant.core.lib" value="D:\JAVA Workspace\apache-ant-1.9.2\lib\ant.jar" />
 
           <property name="file.encoding" value="MS950" />
 
@@ -665,11 +665,11 @@ Reading Web-
 
       </properties>
 
-      <testcase classname="GraphDrawingTest" name="testLowDeveloped" time="0.077" />
+      <testcase classname="GraphDrawingTest" name="testLowDeveloped" time="0.011" />
 
-      <testcase classname="GraphDrawingTest" name="testHighDeveloped" time="0.021" />
+      <testcase classname="GraphDrawingTest" name="testHighDeveloped" time="0.011" />
 
-      <testcase classname="GraphDrawingTest" name="testMidDeveloped" time="0.019" />
+      <testcase classname="GraphDrawingTest" name="testMidDeveloped" time="0.009" />
 
       <system-out><![CDATA[]]></system-out>
 

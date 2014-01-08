@@ -19,7 +19,7 @@
 	<!--Compile -->
 	<target name="compile">
 		<mkdir dir="${classes.dir}" />
-		<javac srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="ture">
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" includeAntRuntime="ture" encoding="UTF-8">
 			<classpath>
 				<!-- change to referenced location -->
 				<path id="org.junit" location="${JUnit4.dir}/junit.jar" />

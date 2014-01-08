@@ -26,6 +26,7 @@ public class CheckUpdate {
 		} else {
 			if (newFile.list().length != originFile.list().length) {
 				updateFiles(originFile, newFile);
+				System.out.println("123456");
 				return true;
 			} else {
 				for (int i = 0; i < originFile.list().length - 1; i++) {
@@ -41,6 +42,12 @@ public class CheckUpdate {
 	} // end of hasUpdate()
 
 	private static void updateFiles(File originFile, File newFile) {
+
+		for (String file : originFile.list()) {
+			File temp = new File(originFile.getPath() + "/" + file);
+			temp.delete();
+		}
+
 		originFile.delete();
 		newFile.renameTo(originFile);
 		newFile.mkdir();

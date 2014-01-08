@@ -21,8 +21,8 @@ public class DBconnect {
 		DataCSV csv = factoryCSV.getCSVData(path);
 
 		csv.data.get(0).indexOf(0);
-		System.out.println("���X�C���:" + csv.data.size());
-		System.out.println("���X����:" + csv.data.get(3).size());
+		// System.out.println("有幾列資料:" + csv.data.size());
+		// System.out.println("有幾行資料:" + csv.data.get(3).size());
 
 		for (int i = 3; i < csv.data.size(); i++) {
 
@@ -33,7 +33,7 @@ public class DBconnect {
 				Connection con = DriverManager.getConnection(url, "Team3", "2013postgres");
 				Statement st = con.createStatement();
 
-				System.out.println("���X�C���:" + csv.data.size());
+				// System.out.println("有幾列資料:" + csv.data.size());
 
 				Country_name = csv.data.get(i).get(0).toString();
 				Country_name = Country_name.substring(1, Country_name.length() - 1);
@@ -58,7 +58,7 @@ public class DBconnect {
 
 				String sql = "insert into hivinfo values ('" + (i - 2) + "','_','" + Country_code + "','" + year_2012 + "','" + year_2013 + "');";
 
-				System.out.println(sql);
+				// System.out.println(sql);
 				st.executeQuery(sql);
 
 				st.close();
@@ -120,8 +120,8 @@ public class DBconnect {
 		DataCSV csv = factoryCSV.getCSVData(path);
 
 		csv.data.get(0).indexOf(0);
-		System.out.println("���X�C���:" + csv.data.size());
-		System.out.println("���X����:" + csv.data.get(3).size());
+		// System.out.println("有幾列資料:" + csv.data.size());
+		// System.out.println("有幾行資料:" + csv.data.get(3).size());
 
 		for (int i = 3; i < csv.data.size(); i++) {
 
@@ -133,7 +133,7 @@ public class DBconnect {
 
 				Statement st = con.createStatement();
 
-				System.out.println("���X�C���:" + csv.data.size());
+				// System.out.println("有幾列資料:" + csv.data.size());
 
 				Country_name = csv.data.get(i).get(0).toString();
 				Country_name = Country_name.substring(1, Country_name.length() - 1);
@@ -172,7 +172,7 @@ public class DBconnect {
 
 				String sql = "insert into borninfo values ('" + (i - 2) + "','_','" + Country_code + "','" + year_2010 + "','" + year_2011 + "','" + year_2012 + "','" + year_2013 + "');";
 
-				System.out.println(sql);
+				// System.out.println(sql);
 				st.executeQuery(sql);
 
 				st.close();
